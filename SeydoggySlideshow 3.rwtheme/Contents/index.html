@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	%header%
+	<title>%title%</title>
+	<script>RwSet = {pathto: "%pathto(javascript.js)%",baseurl: "%base_url%"};</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="%pathto(styles.css)%" />
+	<link rel="stylesheet" type="text/css" media="print" href="%pathto(css/print.css)%" />
+	%style_variations%
+	<link rel="stylesheet" type="text/css" media="screen" href="%pathto(css/colourtag.css)%" />
+	%user_javascript%
+	<script src="%pathto(javascript.js)%"></script>
+	<script src="%pathto(scripts/theme.js)%"></script>
+	<script src="%pathto(scripts/slideshow/jquery.cycle.all.min.js)%"></script>
+	<script src="%pathto(scripts/slideshow/seydoggy.slideshow.js)%"></script>
+	%user_styles%
+	%user_header%
+	%plugin_header%
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!--
+		SeydoggySlideshow 3 - see release notes (%pathto(release.txt)%)
+	-->
+	<div class="wrapper">
+		<header class="siteHeader">
+			<hgroup class="title">
+				<h1 class="site_title">%site_title%</h1>
+				<h2 class="site_slogan">%site_slogan%</h2>
+			</hgroup><!-- .title -->
+			<div class="clear"></div>
+		</header><!-- .siteHeader -->
+		<div class="wrapperTBH">
+			<nav id="toolbar_horizontal">%toolbar%</nav><!-- #toolbar_horizontal -->
+		</div><!-- .wrapperTBH -->
+		<div class="clear"></div>
+		<div class="headerContainer">
+			<div id="extraContainer1" class="preContent">
+				<!--extra user content renders here-->
+			</div><!-- #extraContainer1 .preContent -->
+			<div class="seydoggySlideshow">
+				<div class="pageHeader"></div><!-- .pageHeader -->
+			</div><!-- .seydoggySlideshow -->
+			<div class="clear"></div>
+		</div><!-- .headerContainer -->
+		<div class="wrapperContent">
+			<section class="mainContent">
+				%content%
+			</section><!-- .mainContent -->
+			<aside class="sidebarContent">
+				<nav id="toolbar_vertical"></nav><!-- #toolbar_vertical -->
+				<section class="sidebar">
+					<div class="sidebar_title">
+						%sidebar_title%
+					</div><!-- .sidebar_title -->
+					%sidebar%
+				</section><!-- .sidebar -->
+				<section class="plugin_sidebar">
+					%plugin_sidebar%
+				</section><!-- .plugin_sidebar -->
+			</aside><!-- .sidebarContent -->
+			<div class="clear"></div>
+		</div><!-- .wrapperContent -->
+		<footer>
+			<section class="footer">%footer%</section><!-- .footer -->
+			%breadcrumb%
+			<div class="clear"></div>
+		</footer>
+	</div><!-- .wrapper -->
+</body>
+</html>

@@ -1,0 +1,395 @@
+/* @group RESET */
+*{margin:0;padding:0;}
+header,hgroup,section,nav,footer{display:block;}
+h1,h2,h3,h4,h5,h6{line-height:1.0em;padding-bottom:1.0em;}
+p{margin:0 0 1.0em;}
+ul,ol{margin-left:2.5em;padding:1.0em 0;}
+li{margin-left:2.0em;}
+/* @end */
+/* @group General Styles */
+p{}
+b,strong{}
+a:link,a:visited{text-decoration:none;}
+a:hover,a:active{text-decoration:underline;}
+img,img a{border-style:none;}
+.clear{clear:both;}
+.clear-right{clear:right;}
+.clear-left{clear:left;}
+.widthCheck{background-color:red;height:200px;margin:0;padding:0;}
+code{border:1px solid;font-family:monospace;padding:0.2em 0.5em;}
+pre{border:1px solid;font-family:monospace;font-size:1.3em;margin-bottom:20px;padding:10px;}
+sup{font:0.9em "Times New Roman",Times,sans-serif;font-style:italic;}
+sub{font:0.9em "Times New Roman",Times,sans-serif;font-style:italic;}
+.image-left{float:left;margin:0 15px 5px 0;}
+.image-right{float:right;margin:0 0 5px 15px;}
+.imageStyle{}
+blockquote,.standout{font-size:1.4em;font-family:serif;font-style:italic;line-height:1.7em;letter-spacing:0.05em;padding:1em;text-indent:2em;word-spacing:0.05em;}
+blockquote p{margin:0;padding:0;}
+ul.disc{list-style-type:disc;}
+ul.circle{list-style-type:circle;}
+ul.square{list-style-type:square;}
+ol.arabic-numbers{list-style-type:decimal;}
+ol.upper-alpha{list-style-type:upper-latin;}
+ol.lower-alpha{list-style-type:upper-latin;}
+ol.upper-roman{list-style-type:upper-roman;}
+ol.lower-roman{list-style-type:lower-roman;}
+/* Table Styles */
+table{}
+tr{}
+td{}
+/* @end */
+/* @group layout */
+/* @group common */
+html{}
+body{font:90%/1.5em Helvetica,sans-serif;height:100%;}
+.wrapperOuter{width:100%;position:relative;}
+.wrapperInner{margin:0 auto;padding:0 3em;position:relative;}
+/* @end */
+/* @group title */
+.wrapperTitle{text-align:center;}
+.siteHeader{margin:0 auto;height:7.2em;}
+.logo{float:left;}
+.logo img{position:relative;}
+.title{display:inline;}
+.site_title{font-size:2.7em;}
+.site_slogan{font-size:1.3em;}
+.site_title,.site_slogan{float:left;font-weight:normal;margin:0 0 0 0.5em;padding:0;white-space:nowrap;}
+/* @end */
+/* @group nav toolbar horizontal */
+.wrapperTBH{height:8.2em;}
+#toolbar_horizontal{display:none;float:right;font-size:1.2em;line-height:1.2em;margin:0;}
+#toolbar_horizontal ul{display:inline-block;margin:0;padding:0;}
+#toolbar_horizontal ul li{display:inline;list-style:none;margin:0;padding:0;white-space:nowrap;}
+#toolbar_horizontal ul li a{background:url(images/nav_grad_dark_inv.png) repeat-x center bottom;border:1px solid;display:block;float:left;padding:0.5em 1.5em;margin-left:0.5em;text-decoration:none;white-space:nowrap;}
+#toolbar_horizontal .current,#toolbar_horizontal .currentAncestor{background:url(images/nav_grad_dark.png) repeat-x center top;}
+#toolbar_horizontal ul.toolbarList ul{display:none;}
+/* @end */
+/* @group page title tab */
+.page_title{display:none;font-size:1.5em;height:70px;line-height:70px;position:absolute;text-shadow:rgba(255,255,255,0.35) 0 1px 0,rgba(0,0,0,0.35) 0 -1px 0;top:-9px;}
+.page_title_left{float:left;height:70px;width:37px;}
+.page_title_middle{float:left;height:70px;}
+.page_title_right{float:left;height:70px;width:37px;}
+/* @end */
+/* @group custom header/slide show/extracontent 1 */
+.wrapperHeader{border-top:1px solid;}
+.headerContainer{margin:0;padding:1em 0 3em;}
+.wrapperHeader .preContent{display:none;margin:0 0.9em 0 0;padding:1em;position:absolute;}
+#extraContainer1{}
+.seydoggySlideshow{border:1px solid;}
+.pageHeader{overflow:hidden;}
+/* @end */
+/* @group extracontent 2 */
+.wrapperPostHeader{border-top:1px solid;display:none;font-size:1.1em;padding:1.5em 0;}
+.wrapperPostHeader .preContent{}
+#extraContainer2{}
+/* @end */
+/* @group extracontent 3 */
+.wrapperPreContainer{border-top:5px solid;display:none;font-size:1.1em;padding:1.5em 0;}
+.wrapperPreContainer .preContent{}
+#extraContainer3{}
+/* @end */
+/* @group content */
+.wrapperContent{border-top:1px solid;padding:1em 0;}
+.mainContent{border:1px solid;font-size:1.2em;padding:1em;}
+/* @group sidebar content */
+.sidebarContent{}
+/* @group toolbar vertical */
+#toolbar_vertical{display:none;font-size:0.95em;line-height:1em;margin:0 0 1.5em;}
+/* Parent - Level 0 */
+#toolbar_vertical ul{margin:0;padding:0;}
+#toolbar_vertical ul li{list-style:none;margin:0;padding:0;white-space:nowrap;}
+#toolbar_vertical a{border:1px solid;display:block;padding:1em 2em;text-decoration:none;white-space:nowrap;margin-bottom:0.7em;}
+#toolbar_vertical .current,#toolbar_vertical .currentAncestor{}
+/* Child - Level 1 */
+#toolbar_vertical ul ul a{padding-left:4em;}
+/* Child - Level 2 */
+#toolbar_vertical ul ul ul a{padding-left:5em;}
+/* Child - Level 3 */
+#toolbar_vertical ul ul ul ul a{padding-left:6em;}
+/* Child - Level 4 */
+#toolbar_vertical ul ul ul ul ul a{padding-left:7em;}
+/* @end */
+.sidebar{}
+.sidebar_title{font-size:1.5em;}
+.plugin_sidebar{}
+/* @end */
+/* @end */
+/* @group extracontent 4 */
+.wrapperPostContainer{border-top:1px solid;display:none;font-size:1.1em;padding:1.5em 0;}
+.wrapperPostContainer .postContent{}
+#extraContainer4{}
+/* @end */
+/* @group footer/extracontent 5 */
+.wrapperFooter{border-top:5px solid;display:none;font-size:1.1em;padding:1.5em 0;}
+.wrapperFooter .postContent{}
+#extraContainer5{}
+/* @end */
+/* @group copyright/breadcrumb */
+.wrapperCopyright{border-top:1px solid;font-size:0.8em;line-height:5em;}
+.breadcrumbContainer{text-align:center;}
+.breadcrumbContainer ul{list-style:none;margin:0;padding:0;}
+.breadcrumbContainer ul li{display:inline;margin:0;padding:0;}
+.breadcrumbContainer li a{padding:0 1em;text-decoration:none;white-space:nowrap;}
+.footer{text-align:center;}
+/* @end */
+/* @group Blog */
+/* @group Archive Page */
+.blog-archive-background{}
+.blog-entry-summary{}
+.blog-archive-headings-wrapper{}
+.blog-archive-entries-wrapper{}
+.blog-archive-entries-wrapper .blog-entry{}
+.blog-archive-month{}
+.blog-archive-link{}
+.blog-archive-link a:link,.blog-archive-link a:visited{}
+/* @end */
+.blog-entry{margin:0 0 2em;padding:1.5em;}
+h1.blog-entry-title{font-size:1.5em;font-weight:normal;padding:0 0 0.25em;}
+h1.blog-entry-title a{}
+.blog-entry-date{font-size:0.9em;line-height:1.5em;padding-bottom:0.25em;margin-bottom:1em;}
+.blog-entry-category{}
+.blog-entry-category a:link,.blog-entry-category a:visited{}
+.blog-read-more{}
+.blog-entry-body{}
+.blog-entry-comments{font-size:0.8em;text-align:right;}
+p.blog-entry-tags{font-size:0.8em;margin-top:10px;}
+/* @group blog sidebar */
+.plugin_sidebar{}
+/* Styles the blog categories in the blog sidebar */
+#blog-categories{}
+.blog-category-link-enabled{}
+.blog-category-link-disabled{}
+/* styles the archives in the blog sidebar */
+#blog-archives{}
+#blog-archives br{display:none;}
+.blog-archive-link-enabled:after{content:",";}
+.blog-archive-link-enabled{margin-right:5px;}
+.blog-archive-link-disabled:after{content:",";}
+.blog-archive-link-disabled{display:inline;margin-right:5px;}
+/* styles the Tag Cloud in the sidebar */
+ul.blog-tag-cloud{}
+ul.blog-tag-cloud li{display:inline;margin:0 5px 0 0;padding:0;}
+ul.blog-tag-cloud li a:after{content:",";}
+ul.blog-tag-cloud li a{}
+ul.blog-tag-cloud li a:hover{text-decoration:underline;}
+.blog-tag-size-1{font-size:0.8em;}
+.blog-tag-size-2{font-size:0.85em;}
+.blog-tag-size-3{font-size:0.9em;}
+.blog-tag-size-4{font-size:0.95em;}
+.blog-tag-size-5{font-size:1em;}
+.blog-tag-size-6{font-size:1.05em;}
+.blog-tag-size-7{font-size:1.1em;}
+.blog-tag-size-8{font-size:1.15em;}
+.blog-tag-size-9{font-size:1.2em;}
+.blog-tag-size-10{font-size:1.25em;}
+.blog-tag-size-11{font-size:1.3em;}
+.blog-tag-size-12{font-size:1.35em;}
+.blog-tag-size-13{font-size:1.4em;}
+.blog-tag-size-14{font-size:1.45em;}
+.blog-tag-size-15{font-size:1.5em;}
+.blog-tag-size-16{font-size:1.55em;}
+.blog-tag-size-17{font-size:1.6em;}
+.blog-tag-size-18{font-size:1.65em;}
+.blog-tag-size-19{font-size:1.7em;}
+.blog-tag-size-20{font-size:1.75em;}
+/* Styles the blog RSS feeds in the blog sidebar */
+#blog-rss-feeds{}
+.blog-rss-link{}
+.blog-comments-rss-link{}
+/* Common styles for the blog sidebar */
+.blog-entry,#blog-categories,#blog-archives,.blog-tag-cloud,#blog-rss-feeds{border:1px solid;}
+#blog-categories,#blog-archives,.blog-tag-cloud,#blog-rss-feeds{margin:2em 0 0;padding:1em 1.5em;}
+/* @end */
+/* @end */
+/* @group Contact Form */
+/* sample HTML code
+<div class="message-text">
+Fill in the form below to send me an email.
+</div>
+<form action="...">
+<label>Your Name:</label> *
+<input class="form-input-field" .../>
+<textarea class="form-input-field"...></textarea>
+<input class="form-input-button".../> <input class="form-input-button"
+</form>
+*/
+.message-text{}
+.required-text{}
+form{}
+label{}
+input{}
+.form-input-field{border:1px solid;width:98%;}
+.form-input-button{margin-right:10px;}
+/* @end */
+/* @group File Sharing */
+/* sample HTML
+<div class="filesharing-description"></div>
+<div class="filesharing-item">
+<div class="filesharing-item-title">
+<a href="files/Aqua Blue.jpg">Aqua Blue.jpg</a>
+</div>
+<div class="filesharing-item-description">
+The original Aqua Blue that shipped with Tiger.
+</div>
+</div>
+*/
+.filesharing-description{margin-bottom:30px;}
+.filesharing-item{border:1px solid;float:left;margin:0 5px 10px;padding:10px 10px 0;width:19%;}
+.filesharing-item-title{}
+.filesharing-item-title a:after{content:":";}
+.filesharing-item-title a:link{}
+.filesharing-item-title a:hover{}
+.filesharing-item-title a:visited{}
+.filesharing-item-description{margin:0;}
+/* @end */
+/* @group Photo Album */
+/* @group Index Page (Thumbnail view) */
+/* sample thumbnail code
+<div class="album-title">Your Album (Click to Change)</div>
+<div class="album-description"></div>
+<div class="album-wrapper"> <!--Start album wrapper -->
+<div class="thumbnail-wrap" style="width:144px;height:144px;">
+<div class="thumbnail-frame" style="width:144px;">
+<a href="files/page11-1000-full.html"><img src="files/page11-1000-thumb.jpg" alt="20070928_DSC03723.JPG" width="144" height="144"/></a>
+<p class="thumbnail-caption">20070928_DSC03723.JPG</p>
+</div>
+</div>
+</div>
+*/
+.album-title{display:none;font-size:2.3em;line-height:1.0em;padding-bottom:1.0em;}
+.album-description{display:none;margin-bottom:80px;}
+.album-wrapper{display:block;width:99%;position:relative;}
+.thumbnail-wrap{text-align:center;position:relative;float:left;margin:0 25px 60px;}
+.thumbnail-frame{position:absolute;bottom:0;left:0;text-align:center;margin:0 auto;}
+.thumbnail-frame:hover{}
+.thumbnail-frame a{display:block;height:auto;width:100%;}
+.thumbnail-frame a:hover{}
+.thumbnail-frame img{display:block;margin:auto;}
+.thumbnail-caption{text-align:center;}
+/* @end */
+/* @group Single Page (Photo view) */
+/* sample single page code
+<body class="photo-background">
+<div class="photo-navigation">
+<p class="photo-title">By Merrifield-Photography.com</p>
+<p class="photo-caption">20070928_DSC03723</p>
+<p class="photo-links"><a href="../index.html">RapidWeaver's Photo Album</a> | <a href="page11-1001-full.html">Next</a></p>
+</div>
+<img class="photo-frame" src="page11-1000-full.jpg" alt="Loading Image" width="640" height="428"/>
+<div class="exif-data"><p class="exif-exposure-time">Exposure Time:1/60</p><p class="exif-pixel-y-dimension">Y Dimension:2592</p><p class="exif-iso-rating">ISO:400</p><p class="exif-pixel-x-dimension">X Dimension:3872</p></div>
+</body>
+*/
+.photo-background{}
+.photo-navigation{float:left;margin:40px 0 0 5%;width:33%;}
+.photo-title{font-size:1.8em;line-height:1.1em;margin:0 0 1em;}
+.photo-caption{font-size:1.5em;line-height:1.1em;}
+.photo-links{}
+.photo-navigation a:link,.photo-navigation a:visited{}
+.photo-navigation a:hover{}
+.photo-frame{display:block;float:right;height:auto;margin:40px 5% 0 0;width:53%;}
+/* @end */
+/* @group Flash Slideshow */
+#flashcontent{text-align:center;}
+/* @end */
+/* @end */
+/* @group Quicktime Album */
+/* @group Index Page (Movie Thumbnail view) */
+/* sample Movie Album code
+<div class="movie-page-title">Lotza Moobies</div>
+<div class="movie-page-description">Ahh movies,you have to...</div>
+<div class="movie-thumbnail-frame">
+<a href="files/page10-1000-pop.html" onclick="window.open(this.href,'1000','width=700,height=586');return false;" onkeypress="this.onclick()">
+<img src="files/page10-1000-thumb.jpg" alt="Kids will say the citest things." width="132" height="92" border="0"/>
+</a>
+<div class="movie-thumbnail-caption">Kids will say the citest things.</div>
+</div>
+*/
+.movie-page-title{font-size:2.3em;padding-bottom:1.0em;line-height:1.0em;}
+.movie-page-description{padding-bottom:2.0em;}
+.movie-thumbnail-frame{float:left;width:132px;margin:0 10px 20px;}
+.movie-thumbnail-frame a{display:block;height:auto;width:100%;}
+.movie-thumbnail-frame img{display:block;margin:auto;}
+.movie-thumbnail-frame:hover{}
+.movie-thumbnail-caption{width:95%;text-align:center;}
+/* @end */
+/* @group Single Page (Movie View) */
+/* sample single page code
+<body class="movie-background">
+<div class="movie-frame">
+<!-- Movie code here !-->
+<script language="JavaScript" type="text/javascript">
+QT_WriteOBJECT_XHTML('page10-movie-1.avi','640','496','','autoplay','false' );</script>
+<object></object>
+<!-- Movie code ends !-->
+<p class="movie-title">Or sometimes say nothing at all.</p>
+</div>
+</body>
+*/
+.movie-background{background-color:#fff;height:100%;overflow:hidden;padding:3em 2em 100%;}
+.movie-frame{margin:0 auto;text-align:center;}
+.movie-frame object{border:1px solid;}
+.movie-title{text-align:center;}
+/* @end */
+/* @end */
+/* @group Quicktime Page */
+.movie-frame{margin:0 auto 40px;text-align:center;}
+.movie-description{}
+/* @end */
+/* @group radius */
+.radiusAll,.contentBox{-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;}
+.radiusTop{-webkit-border-top-right-radius:8px;-webkit-border-top-left-radius:8px;-moz-border-radius:8px 8px 0 0;border-radius:8px 8px 0 0;}
+.radiusTopLeft{-webkit-border-top-left-radius:8px;-moz-border-radius:8px 0 0 0;border-radius:8px 0 0 0;}
+.radiusTopRight{-webkit-border-top-right-radius:8px;-moz-border-radius:0 8px 0 0;border-radius:0 8px 0 0;}
+.radiusBottom{-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;-moz-border-radius:0 0 8px 8px;border-radius:0 0 8px 8px;}
+.radiusBottomLeft{-webkit-border-bottom-left-radius:8px;-moz-border-radius:0 0 0 8px;border-radius:0 0 0 8px;}
+.radiusBottomRight{-webkit-border-bottom-right-radius:8px;-moz-border-radius:0 0 8px 0;border-radius:0 0 8px 0;}
+.radiusLeft{-webkit-border-bottom-left-radius:8px;-webkit-border-top-left-radius:8px;-moz-border-radius:8px 0 0 8px;border-radius:8px 0 0 8px;}
+.radiusRight{-webkit-border-bottom-right-radius:8px;-webkit-border-top-right-radius:8px;-moz-border-radius:0 8px 8px 0;border-radius:0 8px 8px 0;}
+.radiusButtons{-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;}
+.radius3{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+.radius0{-webkit-border-radius:0 ! important;-moz-border-radius:0 ! important;border-radius:0 ! important;}
+/* @end */
+/* @group content shadow */
+/*.contentBox is legacy*/
+.contentShadow,.contentBox{-moz-box-shadow:0 3px 3px rgba(0,0,0,.2);-webkit-box-shadow:0 3px 3px rgba(0,0,0,.2);box-shadow:0 3px 3px rgba(0,0,0,.2);}
+.contentShadowLight{-moz-box-shadow:0 1px 2px rgba(0,0,0,.15);-webkit-box-shadow:0 1px 2px rgba(0,0,0,.15);box-shadow:0 1px 2px rgba(0,0,0,.15);}
+.innerShadowTopBottom{-webkit-box-shadow:inset 0 10px 10px -7px rgba(0,0,0,.35),inset 0 -10px 10px -7px rgba(0,0,0,.35);-moz-box-shadow:inset 0 10px 10px -7px rgba(0,0,0,.35),inset 0 -10px 10px -7px rgba(0,0,0,.35);box-shadow:inset 0 10px 10px -7px rgba(0,0,0,.35),inset 0 -10px 10px -7px rgba(0,0,0,.35);}
+.innerShadowTop{-webkit-box-shadow:inset 0 10px 10px -7px rgba(0,0,0,.35);-moz-box-shadow:inset 0 10px 10px -7px rgba(0,0,0,.35);box-shadow:inset 0 10px 10px -7px rgba(0,0,0,.35);}
+.innerShadowBottom{-webkit-box-shadow:inset 0 -5px 5px -3px rgba(0,0,0,.1);-moz-box-shadow:inset 0 -5px 5px -3px rgba(0,0,0,.1);box-shadow:inset 0 -5px 5px -3px rgba(0,0,0,.1);}
+.headerShadowBottom{-webkit-box-shadow:0 3em 1.5em -2em rgba(0,0,0,.3);-moz-box-shadow:0 3em 1.5em -2em rgba(0,0,0,.3);box-shadow:0 3em 1.5em -2em rgba(0,0,0,.3);}
+.innerShadowLeft{-webkit-box-shadow:inset 30px 0 40px -20px rgba(0,0,0,.1);-moz-box-shadow:inset 30px 0 40px -20px rgba(0,0,0,.1);box-shadow:inset 30px 0 40px -20px rgba(0,0,0,.1);}
+.innerShadowRight{-webkit-box-shadow:inset -30px 0 40px -20px rgba(0,0,0,.1);-moz-box-shadow:inset -30px 0 40px -20px rgba(0,0,0,.1);box-shadow:inset -30px 0 40px -20px rgba(0,0,0,.1);}
+.outerShadowTop{-webkit-box-shadow:0 -2px 4px 1px rgba(0,0,0,.1);-moz-box-shadow:0 -2px 4px 1px rgba(0,0,0,.1);box-shadow:0 -2px 4px 1px rgba(0,0,0,.1);}
+.outerShadowLeft{-webkit-box-shadow:-15px 0 20px 0 rgba(0,0,0,.15);-moz-box-shadow:-15px 0 20px 0 rgba(0,0,0,.15);box-shadow:-15px 0 20px 0 rgba(0,0,0,.15);}
+.outerShadowRight{-webkit-box-shadow:15px 0 20px 0 rgba(0,0,0,.15);-moz-box-shadow:15px 0 20px 0 rgba(0,0,0,.15);box-shadow:15px 0 20px 0 rgba(0,0,0,.15);}
+/* @end */
+/* @group seyDoggy Grid */
+.seydoggyGrid{margin-left:-4em;}
+.seydoggyGrid .clear{clear:both;}
+.seydoggyGrid .column{float:left;}
+.seydoggyGrid .one{width:100%;}
+.seydoggyGrid .two{width:50%;}
+.seydoggyGrid .three{width:33.33%;}
+.seydoggyGrid .four{width:25%;}
+.seydoggyGrid .five{width:20%;}
+.seydoggyGrid .six{width:16.66%;}
+.seydoggyGrid .two3rds{width:66.66%;}
+.seydoggyGrid .three4ths{width:75%;}
+.seydoggyGrid .four5ths{width:80%;}
+.seydoggyGrid .five6ths{width:83.33%;}
+.seydoggyGrid .column .content{margin-left:4em;}
+/* @end */
+/* @group ExtraContent Hide on Load */
+#myExtraContent1,#myExtraContent2,#myExtraContent3,#myExtraContent4,#myExtraContent5{display:none;}
+/* @end */
+/* @group sdSlideBox Hide on Load */
+.sdSlideBoxStack, .sdSlideBoxSnippet{display:none;}
+.seydoggySlideshow .sdSlideBoxStack,.seydoggySlideshow .sdSlideBoxSnippet{display:block;}
+/* @end */
+/* @group FormLoom styles */
+.fl-text,.fl-textarea{padding:0.5em;border:1px solid;}
+/* @end */
+/* @group Sitemap Pro styles */
+#sitemap ul,#sitemap ol{padding:0 0 0.5em;margin-left:1em;}
+#sitemap li{margin-left:1em;}
+/* @end */

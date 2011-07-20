@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Creator</key>
+	<string>RapidWeaver</string>
+	<key>Minimum Application Version</key>
+	<string>5.0b1</string>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>PublishingManifest</key>
+				<dict/>
+				<key>Site Resources</key>
+				<data>
+				YnBsaXN0MDDUAQIDBAUIVVZUJHRvcFgkb2JqZWN0c1gk
+				dmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABrxAQCQoR
+				HSAnLDA0ODxASEtPU1UkbnVsbNILDA0QWk5TLm9iamVj
+				dHNWJGNsYXNzog4PgAKAC4AP1hITFAwVFhcYGRobHFhO
+				b2RlIE1hcFlSZXNvdXJjZXNYUGF0aCBNYXBeSWRlbnRp
+				ZmllciBNYXBYUGFnZSBNYXCAB4ADgAmACoAFgAjSCwwe
+				H6CABNIhIiMkWCRjbGFzc2VzWiRjbGFzc25hbWWjJCUm
+				XE5TTXV0YWJsZVNldFVOU1NldFhOU09iamVjdNMLKAwp
+				KitXTlMua2V5c6CggAbSISItLqMuLyZfEBNOU011dGFi
+				bGVEaWN0aW9uYXJ5XE5TRGljdGlvbmFyedMLKAwxMiug
+				oIAG0wsoDDU2K6CggAbTCygMOToroKCABtIhIj0/oj4m
+				XxASUldSZXNvdXJjZURhdGFiYXNlXxASUldSZXNvdXJj
+				ZURhdGFiYXNl1EEMQkNERUZGWENoaWxkcmVuXxASUmVw
+				cmVzZW50ZWQgT2JqZWN0VlBhcmVudIAMgA6AAIAA0gsM
+				SUqggA3SISJMTaNNTiZeTlNNdXRhYmxlQXJyYXlXTlNB
+				cnJhedIhIlBSolEmXxAQUldTb3VyY2VMaXN0Tm9kZV8Q
+				EFJXU291cmNlTGlzdE5vZGXSISJUTqJOJhIAAYagXxAP
+				TlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8
+				AE8AVQBaAGUAbABvAHEAcwB1AIIAiwCVAJ4ArQC2ALgA
+				ugC8AL4AwADCAMcAyADKAM8A2ADjAOcA9AD6AQMBCgES
+				ARMBFAEWARsBHwE1AUIBSQFKAUsBTQFUAVUBVgFYAV8B
+				YAFhAWMBaAFrAYABlQGeAacBvAHDAcUBxwHJAcsB0AHR
+				AdMB2AHcAesB8wH4AfsCDgIhAiYCKQIuAAAAAAAAAgEA
+				AAAAAAAAVwAAAAAAAAAAAAAAAAAAAkA=
+				</data>
+				<key>SiteAttributes</key>
+				<dict>
+					<key>AddCopyrightMailTo</key>
+					<true/>
+					<key>BaseURL</key>
+					<string>http://web.me.com/seydoggy/</string>
+					<key>ConsolidateCommonFilesMode</key>
+					<integer>0</integer>
+					<key>ContactText</key>
+					<string>Contact Me</string>
+					<key>CopyrightText</key>
+					<string>© 2011 Adam Merrifield</string>
+					<key>CopyrightTextUsed</key>
+					<true/>
+					<key>CruftlessLinksEnabled</key>
+					<false/>
+					<key>DirectoryIndexFilenames</key>
+					<array>
+						<string>index.htm</string>
+						<string>index.html</string>
+						<string>index.php</string>
+					</array>
+					<key>EmailAddress</key>
+					<string>info@seydoggy.com</string>
+					<key>FavIconUsed</key>
+					<false/>
+					<key>LogoUsed</key>
+					<false/>
+					<key>ObfuscateEmailAddress</key>
+					<true/>
+					<key>PreviewAfterExportRelativeToBaseURL</key>
+					<false/>
+					<key>ProcessPHP</key>
+					<false/>
+					<key>PublishingSettingsConfigured</key>
+					<false/>
+					<key>ShowBreadcrumbTrail</key>
+					<false/>
+					<key>ShowTidiedCode</key>
+					<false/>
+					<key>SloganText</key>
+					<string>Changing the world, one site at a time…</string>
+					<key>SloganUsed</key>
+					<true/>
+					<key>ThemeName</key>
+					<string>SeydoggySlideshow 3</string>
+					<key>TitleText</key>
+					<string>My Website</string>
+					<key>TitleTextUsed</key>
+					<true/>
+					<key>UUID</key>
+					<string>B8477CBC-C9DA-409B-AC1B-043BF3935046</string>
+					<key>WantsXMLSiteMap</key>
+					<true/>
+					<key>WebClipIconUsed</key>
+					<false/>
+					<key>putGoogleAnalyticsInHead</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array>
+				<string>README.txt</string>
+			</array>
+			<key>Subsandwiches</key>
+			<array>
+				<string>DefaultPageAttributes</string>
+				<string>Pages</string>
+			</array>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>RapidWeaver Document</string>
+</dict>
+</plist>

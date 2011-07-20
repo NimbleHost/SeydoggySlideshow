@@ -1,0 +1,119 @@
+# SeydoggySlideshow #
+**AUTHOR:	Adam Merrifield**   
+**VERSION: v3.0.0**   
+**DATE: 06-20-11 14:17**
+
+## About SeydoggySlideshow ##
+
+SeydoggySlideshow is a built-in slide show component of a RapidWeaver theme that is both easy to use and remarkably powerful. This 3rd iteration adds a user API to allow for greater flexibility and control.
+
+SeydoggySlideshow is no single script or library but is rather a implementation of specific methods to account for the complexity of user input and variability that theme usage encounters. The many moving parts of the SeydoggySlideshow method include [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library"), [Cycle](http://jquery.malsup.com/cycle/), [ExtraContent](https://github.com/seyDoggy/ExtraContent), SlideBox, [RwSetGet](https://github.com/seyDoggy/RwSetGet) and [rwAddLinks](https://github.com/seyDoggy/rwAddLinks).
+
+The methods are sufficiently protected as not to interfere with the myriad of other scripts and functions that can take place in any given RapidWeaver project. However, this implementation differs slightly from ones that I use in production since I call required scripts dynamically, only as needed, to further protect both the slide show methods and those that the slide show may effect. How you choose to do this is up to you but I would highly recommend you do the same.
+
+## Contents ##
+
+* README.mdown
+* SeydoggySlideshow 3.rwtheme - an example RapidWeaver theme with SS3 enabled
+* SeydoggySlideshow Sample.rwsw - a sample RapidWeaver project using SS3
+
+## Developer Implementation ##
+
+Please tear into the sample theme to see how it all goes together. Keep in mind that wouldn't normally call jquery.cycle.js and seydoggy.slideshow.js in the head but did so for simplicity sake for this example.
+
+## Using SeydoggySlideshow 3 ##
+
+### The Basics ###
+
+Using the basic features of SeydoggySlideshow 3 (or SS3) in any SS3 enabled theme is the same as it's been in previous themes with earlier versions of built-in slide shows:
+
+* Slide show type - sequencing and type selection
+* Slide show timeout - duration of the pause between slide transitions
+* Slide show effect - the type of slide animation
+* Slide show speed - the speed of the actual transition
+
+### Advanced Usage ###
+
+For the advanced users there are lots of other tricks that SS3 themes can do, such as:
+
+* User Generated Sequencing - choose which slides to show and how many
+* User Generated Remote Image Sequencing - choose images from remote, externally hosted locations
+* User Generated Banner Links - create a unique link to another web page for each individual slide
+* User Generated Content Slides - use stacks or snippets to rotate through rich content instead of just images
+
+For more on these advanced features, see the SeydoggySlideshow 3 User API
+
+## SeydoggySlideshow 3 User API ##
+
+### sdSlideNum (slide numbers) - User Generated Sequencing ###
+
+* specify the header image numbers you wish to use, in the order you want the to appear.
+* numbers can range from 1 to 20
+* Paste this snippet into Page Inspector > Header > JavaScript
+
+	`var sdSlideNum = [3,5,1,9,15];`
+
+See the [sdSlideNum Snippet](http://seydesign.com/products/Snippets/sdSlideNum/ "seyDesign - sdSlideNum &rarr; Snippets &rarr; products") page for the .rwsnippet download and detailed installation and usage instructions.
+
+### sdSlideWH (slide warehousing) - User Generated Remote Image Sequencing ###
+
+* specify the image URL's you wish to use, in the order you want the to appear.
+* you can specify as many images addresses as you like but load times will increase with each additional image.
+
+Paste this snippet into Page Inspector > Header > JavaScript:
+
+	var sdSlideWH = [
+	"http://www.example.com/images/header3.jpg",
+	"http://www.example.com/images/header5.jpg",
+	"http://www.example.com/images/header1.jpg",
+	"http://www.example.com/images/header9.jpg",
+	"http://www.example.com/images/header15.jpg"
+	];
+
+See the [sdSlideWH Snippet](http://seydesign.com/products/Snippets/sdSlideWH/ "seyDesign - sdSlideWH &rarr; Snippets &rarr; products") page for the .rwsnippet download and detailed installation and usage instructions.
+
+### sdSlideLinks (slide links) - User Generated Banner Links ###
+
+* specify the URL's you want linked to each slide
+* the number of links must match the number of slides
+* the order must coincide with with the relevant slides
+
+Paste this snippet into Page Inspector > Header > JavaScript:
+
+	var sdSlideLinks = [
+	"http://www.google.com",
+	"http://www.tumblr.com",
+	"http://www.twitter.com",
+	"http://www.flickr.com",
+	"http://www.facebook.com"
+	];
+
+See the [sdSlideLinks Snippet](http://seydesign.com/products/Snippets/sdSlideLinks/ "seyDesign - sdSlideLinks &rarr; Snippets &rarr; products") page for the .rwsnippet download and detailed installation and usage instructions.
+
+### sdSlideBox (slide box snippet) - User Generated Content Slides ###
+
+Paste this into any content area in RapidWeaver:
+
+	<div class="sdSlideBoxSnippet" id="mySdSlideBox1">
+		This content will appear as slide 1.<br/>
+		Some sample content. Add whatever you like here.
+	</div>
+
+	<div class="sdSlideBoxSnippet" id="mySdSlideBox2">
+		This content will appear as slide 2.<br/>
+		Some sample content. Add whatever you like here.
+	</div>
+
+	<div class="sdSlideBoxSnippet" id="mySdSlideBox3">
+		This content will appear as slide 3.<br/>
+		Some sample content. Add whatever you like here.
+	</div>
+
+* if used in a styled text ares be sure to select the HTML code portions and ignore formatting.
+* as you add more slide containers, increase the trailing number found in "mySdSlideBox1" to 2, then 3, etc...
+
+See the [sdSlideBox Snippet](http://seydesign.com/products/Snippets/sdSlideBox/ "seyDesign - sdSlideBox &rarr; Snippets &rarr; products") page for the .rwsnippet download and detailed installation and usage instructions.
+
+### SeyDoggy SlideBox (slide box stack) ###
+
+For details on how to use the [SlideBox stack](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products"), visit the SlideBox Stack [product page](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products").

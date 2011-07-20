@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RWCopyFiles</key>
+	<array>
+		<string>css</string>
+		<string>images</string>
+		<string>scripts</string>
+		<string>styles.css</string>
+		<string>javascript.js</string>
+		<string>release.txt</string>
+	</array>
+	<key>RWStyleVariations</key>
+	<dict>
+		<key>RWStyleGroups</key>
+		<array>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Height (header/slide show) [EC 1]</string>
+					<key>en</key>
+					<string>Height (header/slide show) [EC 1]</string>
+					<key>fr</key>
+					<string>Height (header/slide show) [EC 1]</string>
+					<key>it</key>
+					<string>Height (header/slide show) [EC 1]</string>
+					<key>ja</key>
+					<string>Height (header/slide show) [EC 1]</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Hidden</string>
+							<key>en</key>
+							<string>Hidden</string>
+							<key>fr</key>
+							<string>Hidden</string>
+							<key>it</key>
+							<string>Hidden</string>
+							<key>ja</key>
+							<string>Hidden</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array>
+							<string>css/headerheight/headerHeightHidden.css</string>
+						</array>
+						<key>Name</key>
+						<string>Hidden</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>180px</string>
+							<key>en</key>
+							<string>180px</string>
+							<key>fr</key>
+							<string>180px</string>
+							<key>it</key>
+							<string>180px</string>
+							<key>ja</key>
+							<string>180px</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/headerheight/headerHeight180px.css</string>
+						</array>
+						<key>Name</key>
+						<string>180px</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>350px</string>
+							<key>en</key>
+							<string>350px</string>
+							<key>fr</key>
+							<string>350px</string>
+							<key>it</key>
+							<string>350px</string>
+							<key>ja</key>
+							<string>350px</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/headerheight/headerHeight350px.css</string>
+						</array>
+						<key>Name</key>
+						<string>350px</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Variable</string>
+							<key>en</key>
+							<string>Variable</string>
+							<key>fr</key>
+							<string>Variable</string>
+							<key>it</key>
+							<string>Variable</string>
+							<key>ja</key>
+							<string>Variable</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/headerheight/headerHeightVariable.js</string>
+						</array>
+						<key>Name</key>
+						<string>Variable</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Height (header/slide show) [EC 1]</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Background (header/slide show) [EC 1]</string>
+					<key>en</key>
+					<string>Background (header/slide show) [EC 1]</string>
+					<key>fr</key>
+					<string>Background (header/slide show) [EC 1]</string>
+					<key>it</key>
+					<string>Background (header/slide show) [EC 1]</string>
+					<key>ja</key>
+					<string>Background (header/slide show) [EC 1]</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 1</string>
+							<key>en</key>
+							<string>Background image 1</string>
+							<key>fr</key>
+							<string>Background image 1</string>
+							<key>it</key>
+							<string>Background image 1</string>
+							<key>ja</key>
+							<string>Background image 1</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header1.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 1</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 2</string>
+							<key>en</key>
+							<string>Background image 2</string>
+							<key>fr</key>
+							<string>Background image 2</string>
+							<key>it</key>
+							<string>Background image 2</string>
+							<key>ja</key>
+							<string>Background image 2</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header2.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 2</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 3</string>
+							<key>en</key>
+							<string>Background image 3</string>
+							<key>fr</key>
+							<string>Background image 3</string>
+							<key>it</key>
+							<string>Background image 3</string>
+							<key>ja</key>
+							<string>Background image 3</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header3.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 3</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 4</string>
+							<key>en</key>
+							<string>Background image 4</string>
+							<key>fr</key>
+							<string>Background image 4</string>
+							<key>it</key>
+							<string>Background image 4</string>
+							<key>ja</key>
+							<string>Background image 4</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header4.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 4</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 5</string>
+							<key>en</key>
+							<string>Background image 5</string>
+							<key>fr</key>
+							<string>Background image 5</string>
+							<key>it</key>
+							<string>Background image 5</string>
+							<key>ja</key>
+							<string>Background image 5</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header5.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 5</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 6</string>
+							<key>en</key>
+							<string>Background image 6</string>
+							<key>fr</key>
+							<string>Background image 6</string>
+							<key>it</key>
+							<string>Background image 6</string>
+							<key>ja</key>
+							<string>Background image 6</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header6.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 6</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 7</string>
+							<key>en</key>
+							<string>Background image 7</string>
+							<key>fr</key>
+							<string>Background image 7</string>
+							<key>it</key>
+							<string>Background image 7</string>
+							<key>ja</key>
+							<string>Background image 7</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header7.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 7</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 8</string>
+							<key>en</key>
+							<string>Background image 8</string>
+							<key>fr</key>
+							<string>Background image 8</string>
+							<key>it</key>
+							<string>Background image 8</string>
+							<key>ja</key>
+							<string>Background image 8</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header8.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 8</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 9</string>
+							<key>en</key>
+							<string>Background image 9</string>
+							<key>fr</key>
+							<string>Background image 9</string>
+							<key>it</key>
+							<string>Background image 9</string>
+							<key>ja</key>
+							<string>Background image 9</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header9.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 9</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 10</string>
+							<key>en</key>
+							<string>Background image 10</string>
+							<key>fr</key>
+							<string>Background image 10</string>
+							<key>it</key>
+							<string>Background image 10</string>
+							<key>ja</key>
+							<string>Background image 10</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header10.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 10</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 11</string>
+							<key>en</key>
+							<string>Background image 11</string>
+							<key>fr</key>
+							<string>Background image 11</string>
+							<key>it</key>
+							<string>Background image 11</string>
+							<key>ja</key>
+							<string>Background image 11</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header11.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 11</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 12</string>
+							<key>en</key>
+							<string>Background image 12</string>
+							<key>fr</key>
+							<string>Background image 12</string>
+							<key>it</key>
+							<string>Background image 12</string>
+							<key>ja</key>
+							<string>Background image 12</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header12.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 12</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 13</string>
+							<key>en</key>
+							<string>Background image 13</string>
+							<key>fr</key>
+							<string>Background image 13</string>
+							<key>it</key>
+							<string>Background image 13</string>
+							<key>ja</key>
+							<string>Background image 13</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header13.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 13</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 14</string>
+							<key>en</key>
+							<string>Background image 14</string>
+							<key>fr</key>
+							<string>Background image 14</string>
+							<key>it</key>
+							<string>Background image 14</string>
+							<key>ja</key>
+							<string>Background image 14</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header14.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 14</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 15</string>
+							<key>en</key>
+							<string>Background image 15</string>
+							<key>fr</key>
+							<string>Background image 15</string>
+							<key>it</key>
+							<string>Background image 15</string>
+							<key>ja</key>
+							<string>Background image 15</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header15.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 15</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 16</string>
+							<key>en</key>
+							<string>Background image 16</string>
+							<key>fr</key>
+							<string>Background image 16</string>
+							<key>it</key>
+							<string>Background image 16</string>
+							<key>ja</key>
+							<string>Background image 16</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header16.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 16</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 17</string>
+							<key>en</key>
+							<string>Background image 17</string>
+							<key>fr</key>
+							<string>Background image 17</string>
+							<key>it</key>
+							<string>Background image 17</string>
+							<key>ja</key>
+							<string>Background image 17</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header17.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 17</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 18</string>
+							<key>en</key>
+							<string>Background image 18</string>
+							<key>fr</key>
+							<string>Background image 18</string>
+							<key>it</key>
+							<string>Background image 18</string>
+							<key>ja</key>
+							<string>Background image 18</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header18.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 18</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 19</string>
+							<key>en</key>
+							<string>Background image 19</string>
+							<key>fr</key>
+							<string>Background image 19</string>
+							<key>it</key>
+							<string>Background image 19</string>
+							<key>ja</key>
+							<string>Background image 19</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header19.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 19</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Background image 20</string>
+							<key>en</key>
+							<string>Background image 20</string>
+							<key>fr</key>
+							<string>Background image 20</string>
+							<key>it</key>
+							<string>Background image 20</string>
+							<key>ja</key>
+							<string>Background image 20</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/header20.css</string>
+						</array>
+						<key>Name</key>
+						<string>Background image 20</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>No background (transparent)</string>
+							<key>en</key>
+							<string>No background (transparent)</string>
+							<key>fr</key>
+							<string>No background (transparent)</string>
+							<key>it</key>
+							<string>No background (transparent)</string>
+							<key>ja</key>
+							<string>No background (transparent)</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/custombg/headerTransparent.css</string>
+						</array>
+						<key>Name</key>
+						<string>No header background (transparent)</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>No background (color)</string>
+							<key>en</key>
+							<string>No background (color)</string>
+							<key>fr</key>
+							<string>No background (color)</string>
+							<key>it</key>
+							<string>No background (color)</string>
+							<key>ja</key>
+							<string>No background (color)</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array/>
+						<key>Name</key>
+						<string>No header background (color)</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Background (header/slide show) [EC 1]</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Slide show type</string>
+					<key>en</key>
+					<string>Slide show type</string>
+					<key>fr</key>
+					<string>Slide show type</string>
+					<key>it</key>
+					<string>Slide show type</string>
+					<key>ja</key>
+					<string>Slide show type</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Off / Manual (snippet)</string>
+							<key>en</key>
+							<string>Off / Manual (snippet)</string>
+							<key>fr</key>
+							<string>Off / Manual (snippet)</string>
+							<key>it</key>
+							<string>Off / Manual (snippet)</string>
+							<key>ja</key>
+							<string>Off / Manual (snippet)</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array/>
+						<key>Name</key>
+						<string>Off / Manual (snippet)</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Content (SlideBox stack/snippet)</string>
+							<key>en</key>
+							<string>Content (SlideBox stack/snippet)</string>
+							<key>fr</key>
+							<string>Content (SlideBox stack/snippet)</string>
+							<key>it</key>
+							<string>Content (SlideBox stack/snippet)</string>
+							<key>ja</key>
+							<string>Content (SlideBox stack/snippet)</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/sdSlideBoxEnabled.js</string>
+						</array>
+						<key>Name</key>
+						<string>Content (SlideBox stack/snippet)</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 1 to 5</string>
+							<key>en</key>
+							<string>Slides 1 to 5</string>
+							<key>fr</key>
+							<string>Slides 1 to 5</string>
+							<key>it</key>
+							<string>Slides 1 to 5</string>
+							<key>ja</key>
+							<string>Slides 1 to 5</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow1to5.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 1 to 5</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 6 to 10</string>
+							<key>en</key>
+							<string>Slides 6 to 10</string>
+							<key>fr</key>
+							<string>Slides 6 to 10</string>
+							<key>it</key>
+							<string>Slides 6 to 10</string>
+							<key>ja</key>
+							<string>Slides 6 to 10</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow6to10.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 6 to 10</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 11 to 15</string>
+							<key>en</key>
+							<string>Slides 11 to 15</string>
+							<key>fr</key>
+							<string>Slides 11 to 15</string>
+							<key>it</key>
+							<string>Slides 11 to 15</string>
+							<key>ja</key>
+							<string>Slides 11 to 15</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow11to15.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 11 to 15</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 16 to 20</string>
+							<key>en</key>
+							<string>Slides 16 to 20</string>
+							<key>fr</key>
+							<string>Slides 16 to 20</string>
+							<key>it</key>
+							<string>Slides 16 to 20</string>
+							<key>ja</key>
+							<string>Slides 16 to 20</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow16to20.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 16 to 20</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 1 to 10</string>
+							<key>en</key>
+							<string>Slides 1 to 10</string>
+							<key>fr</key>
+							<string>Slides 1 to 10</string>
+							<key>it</key>
+							<string>Slides 1 to 10</string>
+							<key>ja</key>
+							<string>Slides 1 to 10</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow1to10.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 1 to 10</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 11 to 20</string>
+							<key>en</key>
+							<string>Slides 11 to 20</string>
+							<key>fr</key>
+							<string>Slides 11 to 20</string>
+							<key>it</key>
+							<string>Slides 11 to 20</string>
+							<key>ja</key>
+							<string>Slides 11 to 20</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow11to20.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 11 to 20</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Slides 1 to 20</string>
+							<key>en</key>
+							<string>Slides 1 to 20</string>
+							<key>fr</key>
+							<string>Slides 1 to 20</string>
+							<key>it</key>
+							<string>Slides 1 to 20</string>
+							<key>ja</key>
+							<string>Slides 1 to 20</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/slideShow1to20.js</string>
+						</array>
+						<key>Name</key>
+						<string>Slides 1 to 20</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Slide show type</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Slide show timeout</string>
+					<key>en</key>
+					<string>Slide show timeout</string>
+					<key>fr</key>
+					<string>Slide show timeout</string>
+					<key>it</key>
+					<string>Slide show timeout</string>
+					<key>ja</key>
+					<string>Slide show timeout</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>4 seconds</string>
+							<key>en</key>
+							<string>4 seconds</string>
+							<key>fr</key>
+							<string>4 seconds</string>
+							<key>it</key>
+							<string>4 seconds</string>
+							<key>ja</key>
+							<string>4 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array/>
+						<key>Name</key>
+						<string>4 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>6 seconds</string>
+							<key>en</key>
+							<string>6 seconds</string>
+							<key>fr</key>
+							<string>6 seconds</string>
+							<key>it</key>
+							<string>6 seconds</string>
+							<key>ja</key>
+							<string>6 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/timeout6.js</string>
+						</array>
+						<key>Name</key>
+						<string>6 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>8 seconds</string>
+							<key>en</key>
+							<string>8 seconds</string>
+							<key>fr</key>
+							<string>8 seconds</string>
+							<key>it</key>
+							<string>8 seconds</string>
+							<key>ja</key>
+							<string>8 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/timeout8.js</string>
+						</array>
+						<key>Name</key>
+						<string>8 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>12 seconds</string>
+							<key>en</key>
+							<string>12 seconds</string>
+							<key>fr</key>
+							<string>12 seconds</string>
+							<key>it</key>
+							<string>12 seconds</string>
+							<key>ja</key>
+							<string>12 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/timeout12.js</string>
+						</array>
+						<key>Name</key>
+						<string>12 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>16 seconds</string>
+							<key>en</key>
+							<string>16 seconds</string>
+							<key>fr</key>
+							<string>16 seconds</string>
+							<key>it</key>
+							<string>16 seconds</string>
+							<key>ja</key>
+							<string>16 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/timeout16.js</string>
+						</array>
+						<key>Name</key>
+						<string>16 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>20 seconds</string>
+							<key>en</key>
+							<string>20 seconds</string>
+							<key>fr</key>
+							<string>20 seconds</string>
+							<key>it</key>
+							<string>20 seconds</string>
+							<key>ja</key>
+							<string>20 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/timeout20.js</string>
+						</array>
+						<key>Name</key>
+						<string>20 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Slide show timeout</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Slide show effect</string>
+					<key>en</key>
+					<string>Slide show effect</string>
+					<key>fr</key>
+					<string>Slide show effect</string>
+					<key>it</key>
+					<string>Slide show effect</string>
+					<key>ja</key>
+					<string>Slide show effect</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Blind X</string>
+							<key>en</key>
+							<string>Blind X</string>
+							<key>fr</key>
+							<string>Blind X</string>
+							<key>it</key>
+							<string>Blind X</string>
+							<key>ja</key>
+							<string>Blind X</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectBlindX.js</string>
+						</array>
+						<key>Name</key>
+						<string>Blind X</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Blind Y</string>
+							<key>en</key>
+							<string>Blind Y</string>
+							<key>fr</key>
+							<string>Blind Y</string>
+							<key>it</key>
+							<string>Blind Y</string>
+							<key>ja</key>
+							<string>Blind Y</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectBlindY.js</string>
+						</array>
+						<key>Name</key>
+						<string>Blind Y</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Fade</string>
+							<key>en</key>
+							<string>Fade</string>
+							<key>fr</key>
+							<string>Fade</string>
+							<key>it</key>
+							<string>Fade</string>
+							<key>ja</key>
+							<string>Fade</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array/>
+						<key>Name</key>
+						<string>Fade</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Grow X</string>
+							<key>en</key>
+							<string>Grow X</string>
+							<key>fr</key>
+							<string>Grow X</string>
+							<key>it</key>
+							<string>Grow X</string>
+							<key>ja</key>
+							<string>Grow X</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectGrowX.js</string>
+						</array>
+						<key>Name</key>
+						<string>Grow X</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Grow Y</string>
+							<key>en</key>
+							<string>Grow Y</string>
+							<key>fr</key>
+							<string>Grow Y</string>
+							<key>it</key>
+							<string>Grow Y</string>
+							<key>ja</key>
+							<string>Grow Y</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectGrowY.js</string>
+						</array>
+						<key>Name</key>
+						<string>Grow Y</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Scroll down</string>
+							<key>en</key>
+							<string>Scroll down</string>
+							<key>fr</key>
+							<string>Scroll down</string>
+							<key>it</key>
+							<string>Scroll down</string>
+							<key>ja</key>
+							<string>Scroll down</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectScrollDown.js</string>
+						</array>
+						<key>Name</key>
+						<string>Scroll down</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Scroll left</string>
+							<key>en</key>
+							<string>Scroll left</string>
+							<key>fr</key>
+							<string>Scroll left</string>
+							<key>it</key>
+							<string>Scroll left</string>
+							<key>ja</key>
+							<string>Scroll left</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectScrollLeft.js</string>
+						</array>
+						<key>Name</key>
+						<string>Scroll left</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Scroll right</string>
+							<key>en</key>
+							<string>Scroll right</string>
+							<key>fr</key>
+							<string>Scroll right</string>
+							<key>it</key>
+							<string>Scroll right</string>
+							<key>ja</key>
+							<string>Scroll right</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectScrollRight.js</string>
+						</array>
+						<key>Name</key>
+						<string>Scroll right</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Scroll up</string>
+							<key>en</key>
+							<string>Scroll up</string>
+							<key>fr</key>
+							<string>Scroll up</string>
+							<key>it</key>
+							<string>Scroll up</string>
+							<key>ja</key>
+							<string>Scroll up</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectScrollUp.js</string>
+						</array>
+						<key>Name</key>
+						<string>Scroll up</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Shuffle</string>
+							<key>en</key>
+							<string>Shuffle</string>
+							<key>fr</key>
+							<string>Shuffle</string>
+							<key>it</key>
+							<string>Shuffle</string>
+							<key>ja</key>
+							<string>Shuffle</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectShuffle.js</string>
+						</array>
+						<key>Name</key>
+						<string>Shuffle</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Toss</string>
+							<key>en</key>
+							<string>Toss</string>
+							<key>fr</key>
+							<string>Toss</string>
+							<key>it</key>
+							<string>Toss</string>
+							<key>ja</key>
+							<string>Toss</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectToss.js</string>
+						</array>
+						<key>Name</key>
+						<string>Toss</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Slide show effect</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Slide show speed</string>
+					<key>en</key>
+					<string>Slide show speed</string>
+					<key>fr</key>
+					<string>Slide show speed</string>
+					<key>it</key>
+					<string>Slide show speed</string>
+					<key>ja</key>
+					<string>Slide show speed</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>1/4 second</string>
+							<key>en</key>
+							<string>1/4 second</string>
+							<key>fr</key>
+							<string>1/4 second</string>
+							<key>it</key>
+							<string>1/4 second</string>
+							<key>ja</key>
+							<string>1/4 second</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/speed250.js</string>
+						</array>
+						<key>Name</key>
+						<string>1/4 second</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>1/2 second</string>
+							<key>en</key>
+							<string>1/2 second</string>
+							<key>fr</key>
+							<string>1/2 second</string>
+							<key>it</key>
+							<string>1/2 second</string>
+							<key>ja</key>
+							<string>1/2 second</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/speed500.js</string>
+						</array>
+						<key>Name</key>
+						<string>1/2 second</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>3/4 second</string>
+							<key>en</key>
+							<string>3/4 second</string>
+							<key>fr</key>
+							<string>3/4 second</string>
+							<key>it</key>
+							<string>3/4 second</string>
+							<key>ja</key>
+							<string>3/4 second</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/speed750.js</string>
+						</array>
+						<key>Name</key>
+						<string>3/4 second</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>1 second</string>
+							<key>en</key>
+							<string>1 second</string>
+							<key>fr</key>
+							<string>1 second</string>
+							<key>it</key>
+							<string>1 second</string>
+							<key>ja</key>
+							<string>1 second</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array/>
+						<key>Name</key>
+						<string>1 second</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>1 1/2 second</string>
+							<key>en</key>
+							<string>1 1/2 second</string>
+							<key>fr</key>
+							<string>1 1/2 second</string>
+							<key>it</key>
+							<string>1 1/2 second</string>
+							<key>ja</key>
+							<string>1 1/2 second</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/speed1500.js</string>
+						</array>
+						<key>Name</key>
+						<string>1 1/2 second</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>2 seconds</string>
+							<key>en</key>
+							<string>2 seconds</string>
+							<key>fr</key>
+							<string>2 seconds</string>
+							<key>it</key>
+							<string>2 seconds</string>
+							<key>ja</key>
+							<string>2 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/speed2000.js</string>
+						</array>
+						<key>Name</key>
+						<string>2 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>2 1/2 seconds</string>
+							<key>en</key>
+							<string>2 1/2 seconds</string>
+							<key>fr</key>
+							<string>2 1/2 seconds</string>
+							<key>it</key>
+							<string>2 1/2 seconds</string>
+							<key>ja</key>
+							<string>2 1/2 seconds</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/speed2500.js</string>
+						</array>
+						<key>Name</key>
+						<string>2 1/2 seconds</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Slide show speed</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
+					<string>Sidebar position</string>
+					<key>en</key>
+					<string>Sidebar position</string>
+					<key>fr</key>
+					<string>Sidebar position</string>
+					<key>it</key>
+					<string>Sidebar position</string>
+					<key>ja</key>
+					<string>Sidebar position</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Right</string>
+							<key>en</key>
+							<string>Right</string>
+							<key>fr</key>
+							<string>Right</string>
+							<key>it</key>
+							<string>Right</string>
+							<key>ja</key>
+							<string>Right</string>
+						</dict>
+						<key>Enabled</key>
+						<true/>
+						<key>Files</key>
+						<array>
+							<string>css/sidebar/right.css</string>
+						</array>
+						<key>Name</key>
+						<string>Right</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Left</string>
+							<key>en</key>
+							<string>Left</string>
+							<key>fr</key>
+							<string>Left</string>
+							<key>it</key>
+							<string>Left</string>
+							<key>ja</key>
+							<string>Left</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/sidebar/left.css</string>
+						</array>
+						<key>Name</key>
+						<string>Left</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Hide</string>
+							<key>en</key>
+							<string>Hide</string>
+							<key>fr</key>
+							<string>Hide</string>
+							<key>it</key>
+							<string>Hide</string>
+							<key>ja</key>
+							<string>Hide</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>css/sidebar/hide.css</string>
+						</array>
+						<key>Name</key>
+						<string>Hide</string>
+						<key>Type</key>
+						<string>Stylesheet</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Sidebar position</string>
+				<key>GroupSelectionLimit</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>RWTemplateHTML</key>
+	<string>index.html</string>
+	<key>RWTextToolbar</key>
+	<dict>
+		<key>RWAlwaysDisplayFullNavigation</key>
+		<false/>
+		<key>RWBreadCrumb</key>
+		<string>&lt;nav class="breadcrumbContainer"&gt;&lt;ul class="breadcrumbList"&gt;%items%&lt;/ul&gt;&lt;/nav&gt;</string>
+		<key>RWBreadCrumbItem</key>
+		<string>&lt;li class="breadcrumbItem"&gt; &lt;span class="separator"&gt;%separator%&lt;/span&gt; &lt;a href="%url%" title="%title%"&gt;%title%&lt;/a&gt;&lt;/li&gt;</string>
+		<key>RWBreadCrumbSeparator</key>
+		<string>»</string>
+		<key>RWSupportedLevels</key>
+		<integer>4</integer>
+		<key>RWToolbarItemCurrent</key>
+		<string>&lt;li class="currentListItem"&gt;&lt;a class="current" href="%url%" rel="%rel%" title="%title%"&gt;%title%&lt;/a&gt;%subitems%&lt;/li&gt;</string>
+		<key>RWToolbarItemCurrentAncestor</key>
+		<string>&lt;li class="currentAncestorListItem"&gt;&lt;a class="currentAncestor" href="%url%" rel="%rel%" title="%title%"&gt;%title%&lt;/a&gt;%subitems%&lt;/li&gt;</string>
+		<key>RWToolbarItemNormal</key>
+		<string>&lt;li class="normalListItem"&gt;&lt;a class="normal" href="%url%" rel="%rel%" title="%title%"&gt;%title%&lt;/a&gt;%subitems%&lt;/li&gt;</string>
+		<key>RWToolbarList</key>
+		<string>&lt;ul class="toolbarList"&gt;%items%&lt;/ul&gt;</string>
+	</dict>
+	<key>RWThemeAuthor</key>
+	<string>Merrifield</string>
+	<key>RWThemeCapabilities</key>
+	<dict>
+		<key>RWSupportsContentOnlySubPages</key>
+		<true/>
+		<key>RWSupportsDisplayNames</key>
+		<true/>
+		<key>RWSupportsPathTo</key>
+		<true/>
+		<key>RWSupportsToolbarRelTag</key>
+		<true/>
+	</dict>
+	<key>RWThemeDisplayName</key>
+	<dict>
+		<key>de</key>
+		<string>SeydoggySlideshow 3</string>
+		<key>en</key>
+		<string>SeydoggySlideshow 3</string>
+		<key>fr</key>
+		<string>SeydoggySlideshow 3</string>
+		<key>it</key>
+		<string>SeydoggySlideshow 3</string>
+		<key>ja</key>
+		<string>SeydoggySlideshow 3</string>
+	</dict>
+	<key>RWThemeImageLarge</key>
+	<string>preview_large.png</string>
+	<key>RWThemeKeyWords</key>
+		<array>
+			<string>seydoggy</string>
+			<string>slide</string>
+			<string>show</string>
+			<string>slideshow</string>
+			<string>ss3</string>
+		</array>
+	<key>RWThemeName</key>
+	<string>SeydoggySlideshow 3</string>
+	<key>RWThemeShortName</key>
+	<string>ss3</string>
+	<key>RWVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,4 @@
+SeydoggySlideshow 3 r1.000 - 07-19-11 17:45
+release notes:
+
+* initial release

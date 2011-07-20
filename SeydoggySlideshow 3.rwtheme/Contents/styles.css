@@ -1,0 +1,107 @@
+/* @group RESET */
+*{margin:0;padding:0;}
+header,hgroup,section,nav,footer{display:block;}
+h1,h2,h3,h4,h5,h6{line-height:1.0em;padding-bottom:1.0em;}
+p{margin:0 0 1.0em;}
+ul,ol{margin-left:2.5em;padding:1.0em 0;}
+li{margin-left:2.0em;}
+/* @end */
+/* @group General Styles */
+p{}
+b,strong{}
+a:link,a:visited{text-decoration:none;}
+a:hover,a:active{text-decoration:underline;}
+img,img a{border-style:none;}
+.clear{clear:both;}
+.clear-right{clear:right;}
+.clear-left{clear:left;}
+.widthCheck{background-color:red;height:200px;margin:0;padding:0;}
+code{border:1px solid #dedede;font-family:monospace;padding:0.2em 0.5em;}
+pre{border:1px solid #dedede;font-family:monospace;font-size:1.3em;margin-bottom:20px;padding:10px;}
+sup{font:0.9em "Times New Roman",Times,sans-serif;font-style:italic;}
+sub{font:0.9em "Times New Roman",Times,sans-serif;font-style:italic;}
+.image-left{float:left;margin:0 15px 5px 0;}
+.image-right{float:right;margin:0 0 5px 15px;}
+.imageStyle{}
+blockquote,.standout{font-size:1.4em;font-family:serif;font-style:italic;line-height:1.7em;letter-spacing:0.05em;padding:1em;text-indent:2em;word-spacing:0.05em;}
+blockquote p{margin:0;padding:0;}
+ul.disc{list-style-type:disc;}
+ul.circle{list-style-type:circle;}
+ul.square{list-style-type:square;}
+ol.arabic-numbers{list-style-type:decimal;}
+ol.upper-alpha{list-style-type:upper-latin;}
+ol.lower-alpha{list-style-type:upper-latin;}
+ol.upper-roman{list-style-type:upper-roman;}
+ol.lower-roman{list-style-type:lower-roman;}
+/* Table Styles */
+table{}
+tr{}
+td{}
+/* @end */
+/* @group layout */
+/* @group common */
+html{}
+body{font:90%/1.5em Helvetica,sans-serif;height:100%;}
+.wrapper{width:1000px;margin:4em auto;padding:2em;border: 1px solid #999;}
+/* @end */
+/* @group SeydoggySlideshow 3 styles */
+#extraContainer1{}
+#myExtraContent1{display:none;}
+.seydoggySlideshow{border:1px solid #dedede;}
+.pageHeader{background-color: #f3f3f3;overflow:hidden;}
+.sdSlideBoxStack, .sdSlideBoxSnippet{display:none;}
+.seydoggySlideshow .sdSlideBoxStack,.seydoggySlideshow .sdSlideBoxSnippet{display:block;}
+/* @end */
+/* @group custom header */
+.headerContainer{margin:0;padding:1em 0;}
+.headerContainer .preContent{display:none;margin:0 0.9em 0 0;padding:1em;position:absolute;}
+/* @end */
+/* @group title */
+.siteHeader{margin:0 auto 1em;}
+.title{}
+.site_title{font-size:2.7em;}
+.site_slogan{font-size:1.3em;}
+.site_title,.site_slogan{font-weight:normal;margin:0;padding:0;}
+/* @end */
+/* @group content */
+.wrapperContent{padding:1em 0;}
+.mainContent{font-size:1.2em;width:70%}
+.sidebarContent{width:25%;}
+/* @group sidebar content */
+.sidebarContent{}
+.sidebar{}
+.sidebar_title{font-size:1.5em;}
+.plugin_sidebar{}
+/* @end */
+/* @end */
+/* @group nav toolbar horizontal */
+#toolbar_horizontal{font-size:1.2em;line-height:1.2em;margin:0;}
+#toolbar_horizontal ul{display:inline-block;margin:0;padding:0;}
+#toolbar_horizontal ul li{display:inline;list-style:none;margin:0;padding:0;white-space:nowrap;}
+#toolbar_horizontal ul li a{background:url(images/nav_grad_dark_inv.png) repeat-x center bottom;border:1px solid #dedede;display:block;float:left;padding:0.5em 1.5em;margin-right:0.5em;text-decoration:none;white-space:nowrap;}
+#toolbar_horizontal .current,#toolbar_horizontal .currentAncestor{background:url(images/nav_grad_dark.png) repeat-x center top;}
+#toolbar_horizontal ul.toolbarList ul{display:none;}
+/* @end */
+/* @group copyright/breadcrumb */
+.breadcrumbContainer{text-align:center;}
+.breadcrumbContainer ul{list-style:none;margin:0;padding:0;}
+.breadcrumbContainer ul li{display:inline;margin:0;padding:0;}
+.breadcrumbContainer li a{padding:0 1em;text-decoration:none;white-space:nowrap;}
+.footer{text-align:center;}
+/* @end */
+/* @group seyDoggy Grid */
+.seydoggyGrid{margin-left:-4em;}
+.seydoggyGrid .clear{clear:both;}
+.seydoggyGrid .column{float:left;}
+.seydoggyGrid .one{width:100%;}
+.seydoggyGrid .two{width:50%;}
+.seydoggyGrid .three{width:33.33%;}
+.seydoggyGrid .four{width:25%;}
+.seydoggyGrid .five{width:20%;}
+.seydoggyGrid .six{width:16.66%;}
+.seydoggyGrid .two3rds{width:66.66%;}
+.seydoggyGrid .three4ths{width:75%;}
+.seydoggyGrid .four5ths{width:80%;}
+.seydoggyGrid .five6ths{width:83.33%;}
+.seydoggyGrid .column .content{margin-left:4em;}
+/* @end */
