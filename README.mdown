@@ -49,9 +49,10 @@ For more on these advanced features, see the SeydoggySlideshow 3 User API
 
 * specify the header image numbers you wish to use, in the order you want the to appear.
 * numbers can range from 1 to 20
-* Paste this snippet into Page Inspector > Header > JavaScript
 
-	`var sdSlideNum = [3,5,1,9,15];`
+Paste this snippet into Page Inspector > Header > JavaScript
+
+	var sdSlideNum = [3,5,1,9,15];
 
 See the [sdSlideNum Snippet](http://seydesign.com/products/Snippets/sdSlideNum/ "seyDesign - sdSlideNum &rarr; Snippets &rarr; products") page for the .rwsnippet download and detailed installation and usage instructions.
 
