@@ -9,6 +9,11 @@
 			<dict>
 				<key>Changed</key>
 				<true/>
+				<key>ColourStyles</key>
+				<dict>
+					<key>SeydoggySlideshow 3</key>
+					<dict/>
+				</dict>
 				<key>CreditRapidWeaver</key>
 				<true/>
 				<key>CustomCopyrightUsed</key>
@@ -49,7 +54,7 @@
 						<string>Slide show effect.Fade</string>
 						<string>Slide show speed.1 second</string>
 						<string>Slide show timeout.4 seconds</string>
-						<string>Slide show type.Slides 6 to 10</string>
+						<string>Slide show type.Content (SlideBox stack/snippet)</string>
 					</array>
 				</dict>
 			</dict>

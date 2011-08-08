@@ -40,7 +40,7 @@ td{}
 /* @end */
 /* @group layout */
 /* @group common */
-html{}
+html{background-color: #fff;}
 body{font:90%/1.5em Helvetica,sans-serif;height:100%;}
 .wrapper{width:1000px;margin:4em auto;padding:2em;border: 1px solid #999;}
 /* @end */

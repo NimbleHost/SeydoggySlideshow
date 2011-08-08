@@ -1,3 +1,49 @@
+SeydoggySlideshow 3 r2.001 - 08-08-11 09:18
+release notes:
+
+commit	f73a6ebf55955a39957089598902f477d1fa0d61
+tree	545b0e02197562745dcd5d7158b873b8cd05c888
+parent	090fdebc436bc7f79c82a1a32bcf04da2202fd1d
+Removed link to missing color css file.
+
+seyDoggy (author)
+Aug 8, 2011 8:47:26 AM
+master
+Contents/index.html	
+
+commit	4143437a506c180ad943da596b06b6f76663fa65
+tree	c335a6185db771c5cd9ea0b860828501e93d6537
+parent	f73a6ebf55955a39957089598902f477d1fa0d61
+Removed links to slideshow and cycle files, opting for dynamic links in theme.js.
+
+seyDoggy (author)
+Aug 8, 2011 8:53:31 AM
+Contents/index.html	
+
+commit	a5056e1c6f75fe29aca1cee8bac02cdc96ed16da
+tree	69ff113386bc9701f856cf7616e876f6d479e710
+parent	4143437a506c180ad943da596b06b6f76663fa65
+Made several optimizations to the JavaScript code. Added a global var object to pass vars between objects.
+
+seyDoggy (author)
+Aug 8, 2011 9:13:39 AM
+Contents/scripts/slideshow/seydoggy.slideshow.js	
+Contents/scripts/theme.js	
+
+commit	b7ce4508993d09e3a2baf7667eb9fea742c7ae0e
+tree	26334e69c9ea226dc9f25a191b1111b484d04283
+parent	a5056e1c6f75fe29aca1cee8bac02cdc96ed16da
+Added color to HTML tag.
+
+seyDoggy (author)
+Aug 8, 2011 9:17:36 AM
+Contents/styles.css	
+
+SeydoggySlideshow 3 r2.000 - 08-07-11 18:01
+release notes:
+
+* started tracking theme in private git repository
+
 SeydoggySlideshow 3 r1.000 - 07-19-11 17:45
 release notes:
 
