@@ -1,7 +1,6 @@
 # SeydoggySlideshow #
 **AUTHOR:	Adam Merrifield**   
-**VERSION: v3.0.0**   
-**DATE: 06-20-11 14:17**
+**VERSION: 3**   
 
 ## About SeydoggySlideshow ##
 
