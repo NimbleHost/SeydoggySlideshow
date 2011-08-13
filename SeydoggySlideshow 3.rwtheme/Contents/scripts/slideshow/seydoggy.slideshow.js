@@ -2,8 +2,8 @@
 	# SeydoggySlideshow #
 	
 	AUTHOR:	Adam Merrifield <http://adam.merrifield.ca>
-	VERSION: v3.0.1
-	DATE: 07-28-11 15:39
+	VERSION: v3.0.2
+	DATE: 08-12-11 22:22
 
 */
 // define user effect setting (see effectXXX.js)
@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
 				// if header height variable set .seydoggySlideshow height to content height
 				if (seydoggy.isVariable) sdSlideshow.sdSetHeight(sdContentSlide,0);
 				// clean up after
-				seydoggy.pageHeader.css('background','transparent');
+				$('.pageHeader').css('background','transparent');
 			} else {
 				// INITIALIZE VARIABLES
 				var arrlen='';
@@ -117,7 +117,7 @@ jQuery(document).ready(function($) {
 		})();
 
 		// set width of header
-		seydoggy.pageHeader.width(headerWidth);
+		$('.pageHeader').width(headerWidth);
 
 		// start the slideshow 
 		var sdCycleFunction = (function(){
