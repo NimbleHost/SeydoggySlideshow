@@ -2,8 +2,8 @@
 	# SeydoggySlideshow #
 	
 	AUTHOR:	Adam Merrifield <http://adam.merrifield.ca>
-	VERSION: v3.0.2
-	DATE: 08-12-11 22:22
+	VERSION: v3.0.3
+	DATE: 08-18-11 19:48
 
 */
 // define user effect setting (see effectXXX.js)
@@ -23,7 +23,10 @@ jQuery(document).ready(function($) {
 		var headerWidth = sdSlideshow.width();
 		var headerHeight = seydoggy.pageHeader.css('height');
 		var ec1 = $('#extraContainer1');
-
+		
+		// GLOBAL VARIABLES
+		seydoggy.dom = {};
+		
 		// create all slides
 		var sdSlideFunction = (function(){
 			if (typeof sdSlideBox != "undefined") {
@@ -66,8 +69,6 @@ jQuery(document).ready(function($) {
 				}
 				// if header height variable set .seydoggySlideshow height to content height
 				if (seydoggy.isVariable) sdSlideshow.sdSetHeight(sdContentSlide,0);
-				// clean up after
-				$('.pageHeader').css('background','transparent');
 			} else {
 				// INITIALIZE VARIABLES
 				var arrlen='';
@@ -116,8 +117,14 @@ jQuery(document).ready(function($) {
 			}
 		})();
 
+		// redefine pageHeader to account for DOM creations
+		seydoggy.dom.pageHeader = $('.pageHeader');
+
+		// clean up sdSlideBox backgrounds
+		if (typeof sdSlideBox != "undefined") seydoggy.dom.pageHeader.css('background','transparent');
+		
 		// set width of header
-		$('.pageHeader').width(headerWidth);
+		seydoggy.dom.pageHeader.width(headerWidth);
 
 		// start the slideshow 
 		var sdCycleFunction = (function(){
@@ -130,6 +137,5 @@ jQuery(document).ready(function($) {
 	})();
 
 	// add links to slides
-	if(typeof sdSlideLinks != "undefined") seydoggy.pageHeader.rwAddLinks(sdSlideLinks);
-
+	if(typeof sdSlideLinks != "undefined") seydoggy.dom.pageHeader.rwAddLinks(sdSlideLinks);
 });

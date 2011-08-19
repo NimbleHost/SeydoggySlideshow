@@ -50,7 +50,7 @@ jQuery(document).ready(function($){
 	/* @end */
 });
 // test to see if user has selected a slideshow option
-if(typeof sdSlideNum != "undefined") {
+if((typeof sdSlideNum != "undefined") || (typeof sdSlideWH != "undefined")) {
 	include(RwGet.pathto('scripts/slideshow/jquery.cycle.all.min.js'));
 	include(RwGet.pathto('scripts/slideshow/seydoggy.slideshow.js'));
 }

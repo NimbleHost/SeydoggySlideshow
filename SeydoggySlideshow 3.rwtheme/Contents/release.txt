@@ -1,6 +1,45 @@
+SeydoggySlideshow 3 r4.000 - 08-18-11 19:56
+Commit Files:
+
+Contents/Info.plist
+Contents/Theme.plist
+Contents/scripts/slideshow/seydoggy.slideshow.js
+Contents/scripts/theme.js
+Using Message:
+
+- fixed issue where sdSlideWH was being triggered
+
+
 SeydoggySlideshow 3 r3.000 - 08-12-11 22:25
 release notes:
 
+Commit Files:
+
+Contents/Info.plist
+Contents/Theme.plist
+Contents/release.txt
+Contents/scripts/slideshow/seydoggy.slideshow.js
+
+Using Message:
+
+Updated theme to r3.000
+- updated two selectors in seydoggy.slideshow.js to correct an issue where the background of a content slide was being carried over to the slide box and the width was not properly inherited.
+Diff of committed changes:
+
+Contents/scripts/slideshow/seydoggy.slideshow.js
+
+left	right	
+69	69					// clean up after
+70						seydoggy.pageHeader.css('background','transparent');
+70					$('.pageHeader').css('background','transparent');
+71	71				} else {
+72	72					// INITIALIZE VARIABLES
+
+119	119			// set width of header
+120				seydoggy.pageHeader.width(headerWidth);
+120			$('.pageHeader').width(headerWidth);
+121	121	
+122	122			// start the slideshow 
 
 
 SeydoggySlideshow 3 r2.001 - 08-08-11 09:18
