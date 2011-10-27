@@ -2,27 +2,26 @@
 	# SeydoggySlideshow #
 	
 	AUTHOR:	Adam Merrifield <http://adam.merrifield.ca>
-	VERSION: v3.0.3
-	DATE: 08-18-11 19:48
+	VERSION: v3.0.4
 
 */
 // define user effect setting (see effectXXX.js)
-var slideshowEffect;// 'fade' default
+var slideshowEffect,// 'fade' default
 // define user slideshow timing (see timeoutXXX.js)
-var slideshowTimeout;// 4000 default
+	slideshowTimeout,// 4000 default
 // define user effect timing (see speedXXX.js)
-var slideshowSpeed;// 1000 default
+	slideshowSpeed;// 1000 default
 
 jQuery(document).ready(function($) {
 	// SLIDE SHOW SETUP
 	var SdSlideShowSet = (function(){
 		
 		// VARIABLES
-	    var sdSlideshow = $('.seydoggySlideshow');
-		var preContentWidth = $('.headerContainer .preContent').width();
-		var headerWidth = sdSlideshow.width();
-		var headerHeight = seydoggy.pageHeader.css('height');
-		var ec1 = $('#extraContainer1');
+	    var sdSlideshow = $('.seydoggySlideshow'),
+			preContentWidth = $('.headerContainer .preContent').width(),
+			headerWidth = sdSlideshow.width(),
+			headerHeight = seydoggy.pageHeader.css('height'),
+			ec1 = $('#extraContainer1');
 		
 		// GLOBAL VARIABLES
 		seydoggy.dom = {};
@@ -88,7 +87,7 @@ jQuery(document).ready(function($) {
 				}
 				
 				// initial slide
-				seydoggy.pageHeader.replaceWith('<div class="pageHeader" style="background: '+thisURL+' center top repeat; width:'+headerWidth+'px;"><div class="preContent movedEC1" style="display:block;"></div></div>');
+				seydoggy.pageHeader.replaceWith('<div class="pageHeader" style="background: '+thisURL+' center top repeat; width:'+headerWidth+'px;"></div><!-- .pageHeader -->');
 				// copy ExtraContent to first slide
 				$('.movedEC1').append($('.headerContainer .preContent').html());
 				$('.movedEC1').width(preContentWidth);
@@ -96,22 +95,18 @@ jQuery(document).ready(function($) {
 				if (typeof sdSlideWH != "undefined") {
 					// WAREHOUSE
 					for (var i=1, len=arrlen; i<len; ++i) {
-						sdSlideshow.append('<div class="pageHeader" style="background: url('+sdSlideWH[i]+') center top repeat; width:'+headerWidth+'px;"><div class="preContent movedEC'+(i+1)+'" style="display:block;"></div></div><!-- .pageHeader -->');
+						sdSlideshow.append('<div class="pageHeader" style="background: url('+sdSlideWH[i]+') center top repeat; width:'+headerWidth+'px;"></div><!-- .pageHeader -->');
 					}
 					
 				} else {
 					// LOCAL
 					for (var i=1, len=arrlen; i<len; ++i) {
-						sdSlideshow.append('<div class="pageHeader" style="background: url('+RwGet.pathto('images/editable_images/header'+sdSlideNum[i]+'.jpg')+') center top repeat; width:'+headerWidth+'px;"><div class="preContent movedEC'+(i+1)+'" style="display:block;"></div></div><!-- .pageHeader -->');
+						sdSlideshow.append('<div class="pageHeader" style="background: url('+RwGet.pathto('images/editable_images/header'+sdSlideNum[i]+'.jpg')+') center top repeat; width:'+headerWidth+'px;"></div><!-- .pageHeader -->');
 					}
 				}
-				for (var i=1, len=arrlen; i<len; ++i) {
-					// copy ExtraContent to other slides
-					$('.movedEC'+(i+1)).append($('.headerContainer .preContent').html());
-					$('.movedEC'+(i+1)).width(preContentWidth);
-				}
-				
-				
+				// make ExtraContent visible
+				$('.headerContainer .preContent').css('z-index','100');
+
 				// if header height is variable set .seydoggySlideshow height to content height
 				if (seydoggy.isVariable) seydoggy.slideHeader.sdSetHeight('#extraContainer1 div',30);;
 			}

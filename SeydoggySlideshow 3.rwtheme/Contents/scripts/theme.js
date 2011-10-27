@@ -11,10 +11,10 @@ jQuery(document).ready(function($){
 	// VARIABLES
 	var pageWidth = $('.siteHeader').outerWidth(true);
 	// GLOBAL VARIABLES
-	seydoggy = {};
-	seydoggy.isVariable = typeof headerHeightVariable != 'undefined';
-	seydoggy.slideHeader = $('.seydoggySlideshow,.pageHeader');
-	seydoggy.pageHeader = $('.pageHeader');
+	seydoggy = {},
+		seydoggy.isVariable = typeof headerHeightVariable != 'undefined',
+		seydoggy.slideHeader = $('.seydoggySlideshow,.pageHeader'),
+		seydoggy.pageHeader = $('.pageHeader');
 	
 	/* @group ExtraContent */
 	// function/styles for ExtraContent
