@@ -1,3 +1,23 @@
+SeydoggySlideshow 3 r5.000
+
+Commit: ec8c5a1
+Date: 2011-10-27 13:05:16 -0400
+
+>>    Improved ExtraContent behavior over slide show.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |   16 ++++++----------
+ 1 files changed, 6 insertions(+), 10 deletions(-)
+
+Commit: 0561967
+Date: 2011-10-27 12:56:12 -0400
+
+>>    Optimized some variable definitions.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |   19 +++++++++----------
+ Contents/scripts/theme.js                        |    8 ++++----
+ 2 files changed, 13 insertions(+), 14 deletions(-)
+
+
 SeydoggySlideshow 3 r4.000 - 08-18-11 19:56
 Commit Files:
 
