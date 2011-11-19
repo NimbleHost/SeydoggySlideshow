@@ -1696,13 +1696,21 @@ Having seen SS3 installed by a few other developers I saw the need to make a dev
 **Developer options** (shown here with defaults first):
 
 	wrapper : '.headerContainer' // any class or id you would like the whole works wrapped in.   
+
 	target : 'seydoggySlideshow' // any class that you want used as the target wrapper.   
+
 	ecValue : 1 // the number of the EC area in the header. 0 if none
+
 	imgType : 'jpg'/'png' // change the image type to png's instead of the default `jpg`.   
+
 	bgPosition : 'center top' // change how your banner background image is positioned within its container.   
+
 	bgRepeat : 'repeat'/'no-repeat' // change the repeat property of the background
+
 	widthAdjust : 30 //number in pixels to reduce ExtraContent width   
+
 	heightAdjust : 30 //number in pixels to reduce ExtraContent height   
+
 	plusClass : 'someString' // string or space separated values for additional slide classes
 
 ### Examples ###
