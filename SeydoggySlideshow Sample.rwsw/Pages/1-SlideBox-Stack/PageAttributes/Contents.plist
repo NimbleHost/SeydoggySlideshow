@@ -51,8 +51,9 @@
 						<string>Background (header/slide show) [EC 1].Background image 1</string>
 						<string>Height (header/slide show) [EC 1].Variable</string>
 						<string>Sidebar position.Right</string>
-						<string>Slide show effect.Fade</string>
-						<string>Slide show speed.1 second</string>
+						<string>Slide show effect.Blind Y</string>
+						<string>Slide show position.Footer</string>
+						<string>Slide show speed.1/2 second</string>
 						<string>Slide show timeout.4 seconds</string>
 						<string>Slide show type.Content (SlideBox stack/snippet)</string>
 					</array>

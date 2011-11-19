@@ -124,7 +124,7 @@
 						<false/>
 						<key>Files</key>
 						<array>
-							<string>css/headerheight/headerHeightVariable.js</string>
+							<string>scripts/slideshow/headerHeightVariable.js</string>
 						</array>
 						<key>Name</key>
 						<string>Variable</string>
@@ -1775,6 +1775,6 @@
 	<key>RWThemeShortName</key>
 	<string>ss3</string>
 	<key>RWVersion</key>
-	<integer>5</integer>
+	<integer>6</integer>
 </dict>
 </plist>

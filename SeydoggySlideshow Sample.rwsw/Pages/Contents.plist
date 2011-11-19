@@ -8,13 +8,14 @@
 			<key>Dictionary</key>
 			<dict>
 				<key>HomePage</key>
-				<string>1-SS3-Sample-Theme</string>
+				<string>1-SlideBox-Stack</string>
 			</dict>
 			<key>Files</key>
 			<array/>
 			<key>Subsandwiches</key>
 			<array>
-				<string>1-SS3-Sample-Theme</string>
+				<string>1-SlideBox-Stack</string>
+				<string>2-SlideBox-Snippet</string>
 			</array>
 		</dict>
 	</array>

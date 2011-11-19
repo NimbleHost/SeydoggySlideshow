@@ -1,136 +1,165 @@
-/*
-	# SeydoggySlideshow #
-	
-	AUTHOR:	Adam Merrifield <http://adam.merrifield.ca>
-	VERSION: v3.0.4
+/* RwGet */
+if (typeof RwGet == 'undefined') RwGet = { pathto: function(path, file) { var rtrim = function(str, list) { var charlist = !list ? 's\xA0': (list + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '$1'); var re = new RegExp('[' + charlist + ']+$', 'g'); return (str + '').replace(re, ''); }; var jspathto = rtrim(RwSet.pathto, "javascript.js"); if ((path !== undefined) && (file !== undefined)) { jspathto = jspathto + path + file; } else if (path !== undefined) { jspathto = jspathto + path; } return jspathto; }, baseurl: function(path, file) { var jsbaseurl = RwSet.baseurl; if ((path !== undefined) && (file !== undefined)) { jsbaseurl = jsbaseurl + path + file; } else if (path !== undefined) { jsbaseurl = jsbaseurl + path; } return jsbaseurl; } };/* @end */
+/* rwAddLinks v1.0.0 */
+if (typeof rwAddLinks == 'undefined') (function($) { $.fn.rwAddLinks = function(linkArr) { var i = 0; $(this).each(function(i) { $(this).click(function() { location.href = linkArr[i++]; }).hover(function() { $(this).css("cursor", "pointer"); }); }); }; })(jQuery); /* @end */
+/* sdSetHeight 1.1.0 */
+if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = function(elem, value) { sdTallest = 0; $(elem).each(function() { var thisTallest = $(this).outerHeight(true); if (thisTallest > sdTallest) sdTallest = thisTallest; }); $(this).height(sdTallest + value); }; })(jQuery); /* @end */
 
-*/
-// define user effect setting (see effectXXX.js)
-var slideshowEffect,// 'fade' default
-// define user slideshow timing (see timeoutXXX.js)
-	slideshowTimeout,// 4000 default
-// define user effect timing (see speedXXX.js)
-	slideshowSpeed;// 1000 default
+// initiate sdSS object
+sdSS = {};
 
-jQuery(document).ready(function($) {
-	// SLIDE SHOW SETUP
-	var SdSlideShowSet = (function(){
-		
-		// VARIABLES
-	    var sdSlideshow = $('.seydoggySlideshow'),
-			preContentWidth = $('.headerContainer .preContent').width(),
-			headerWidth = sdSlideshow.width(),
-			headerHeight = seydoggy.pageHeader.css('height'),
-			ec1 = $('#extraContainer1');
-		
-		// GLOBAL VARIABLES
-		seydoggy.dom = {};
-		
-		// create all slides
-		var sdSlideFunction = (function(){
-			if (typeof sdSlideBox != "undefined") {
-				// SETUP BOX SLIDES
+/* SeydoggySlideshow 3.1.0 */
+(function($) {
+    $.SeydoggySlideshow = function(settings) {
 
-				// determine stack or snippet
-				sdSlideNum=new Array();
-				var sdContentSlide;
-				var i=0;
-				if ($('.sdSlideBoxSnippet').length) {
-					sdContentSlide = '.sdSlideBoxSnippet'
-					$(sdContentSlide).each(function(i){
-						sdSlideNum[i++] = ($(sdContentSlide).index(this))+1;
-					});
-				} else {
-					sdContentSlide = '.sdSlideBoxStack'
-					$(sdContentSlide).each(function(i){
-						sdSlideNum[i++] = $(sdContentSlide).index(this);
-					});
-				}
+		// DEVELOPER SETTINGS
+		sdSS.wrapper = '.headerContainer',
+			sdSS.target = '.seydoggySlideshow',
+			sdSS.ecValue = 1,
+			sdSS.imgType = 'jpg',
+			sdSS.bgPosition = 'center top',
+			sdSS.bgRepeat = 'repeat',
+			sdSS.widthAdjust = 29,
+			sdSS.heightAdjust = 30,
+			sdSS.plusClass = '';
 
-				// VARIABLES
-				var arrlen=sdSlideNum.length;
+		// check for options
+		if (settings) $.extend(sdSS, settings);
 
-				// clean up what's there
-				ec1.remove();
-				sdSlideshow.css({
-					'background-image':seydoggy.pageHeader.css('background-image'),
-					'background-position':seydoggy.pageHeader.css('background-position'),
-					'background-color':seydoggy.pageHeader.css('background-color')
-				});
-				// initial box slide
-				seydoggy.pageHeader.replaceWith('<div class="pageHeader" id="sdSlideBox'+sdSlideNum[0]+'"></div>');
-				$('#mySdSlideBox'+sdSlideNum[0]).appendTo('#sdSlideBox'+sdSlideNum[0]);
+        // VARIABLES
+        var jq = $([]),
+        	arrlen = '',
+        	i = 0,
+        	isVariable = typeof sdSS.headerHeightVariable != 'undefined',
+        	hContainer = jq.add('div' + sdSS.wrapper),
+        	sdSlideshow = hContainer.find('div' + sdSS.target),
+        	pageHeader = sdSlideshow.find('div.pageHeader'),
+        	slideHeader = sdSlideshow.add(pageHeader),
+        	ec1 = hContainer.find('div#extraContainer' + sdSS.ecValue),
+			myEC = hContainer.find('div#myExtraContent' + sdSS.ecValue),
+        	preContent = hContainer.find('div.preContent'),
+        	preContentWidth = preContent.width(),
+        	sdContentSlide = jq.add('div.sdSlideBoxStack'),
+        	sdContentIndex = 0,
+        	headerWidth = sdSlideshow.width(),
+        	headerHeight = pageHeader.css('height');
 
-				// add box slides to slideshow
-				for (var i=1, len=arrlen; i<len; ++i) {
-					sdSlideshow.append('<div class="pageHeader" id="sdSlideBox'+sdSlideNum[i]+'"></div>');
-					$('#mySdSlideBox'+sdSlideNum[i]).appendTo('#sdSlideBox'+sdSlideNum[i]);
-				}
-				// if header height variable set .seydoggySlideshow height to content height
-				if (seydoggy.isVariable) sdSlideshow.sdSetHeight(sdContentSlide,0);
-			} else {
-				// INITIALIZE VARIABLES
-				var arrlen='';
-				var thisURL='';
-				var nextURL='';
-				var n=0;
-
-				// SET UP IMAGE SLIDES
-				if (typeof sdSlideWH != "undefined") {
-					// WAREHOUSE VARIABLES
-					arrlen=sdSlideWH.length;
-					thisURL='url('+sdSlideWH[n]+')';
-				} else {
-					// LOCAL VARIABLES
-					arrlen=sdSlideNum.length;
-					thisURL='url('+RwGet.pathto('images/editable_images/header'+sdSlideNum[n]+'.jpg')+')';
-				}
-				
-				// initial slide
-				seydoggy.pageHeader.replaceWith('<div class="pageHeader" style="background: '+thisURL+' center top repeat; width:'+headerWidth+'px;"></div><!-- .pageHeader -->');
-				// copy ExtraContent to first slide
-				$('.movedEC1').append($('.headerContainer .preContent').html());
-				$('.movedEC1').width(preContentWidth);
-				// add slides to slideshow
-				if (typeof sdSlideWH != "undefined") {
-					// WAREHOUSE
-					for (var i=1, len=arrlen; i<len; ++i) {
-						sdSlideshow.append('<div class="pageHeader" style="background: url('+sdSlideWH[i]+') center top repeat; width:'+headerWidth+'px;"></div><!-- .pageHeader -->');
-					}
-					
-				} else {
-					// LOCAL
-					for (var i=1, len=arrlen; i<len; ++i) {
-						sdSlideshow.append('<div class="pageHeader" style="background: url('+RwGet.pathto('images/editable_images/header'+sdSlideNum[i]+'.jpg')+') center top repeat; width:'+headerWidth+'px;"></div><!-- .pageHeader -->');
-					}
-				}
-				// make ExtraContent visible
-				$('.headerContainer .preContent').css('z-index','100');
-
-				// if header height is variable set .seydoggySlideshow height to content height
-				if (seydoggy.isVariable) seydoggy.slideHeader.sdSetHeight('#extraContainer1 div',30);;
+		// EXTRACONTENT AREA 1
+		// if the first ExtraContent hasn't yet been propogated
+		if (!myEC.length) {
+			myEC = jq.add('div#myExtraContent' + sdSS.ecValue);
+			if (myEC.length) {
+				myEC.find('script').remove().end().appendTo(ec1).show();
+				// !hide !empty ExtraContent area
+				preContent.show();
 			}
-		})();
+		}
 
-		// redefine pageHeader to account for DOM creations
-		seydoggy.dom.pageHeader = $('.pageHeader');
+        if (!sdContentSlide.length) sdContentSlide = jq.add('div.sdSlideBoxSnippet'), sdContentIndex = 1;
 
-		// clean up sdSlideBox backgrounds
-		if (typeof sdSlideBox != "undefined") seydoggy.dom.pageHeader.css('background','transparent');
-		
-		// set width of header
-		seydoggy.dom.pageHeader.width(headerWidth);
+        if ((typeof sdSS.slideNum != "undefined") || (typeof sdSS.slideWH != "undefined") || (typeof sdSlideNum != "undefined") || (typeof sdSlideWH != "undefined")) {
 
-		// start the slideshow 
-		var sdCycleFunction = (function(){
-			sdSlideshow.cycle({
-				fx: slideshowEffect,
-				timeout:slideshowTimeout,
-				speed:slideshowSpeed
-			});
-		})();
-	})();
+			// SETUP SLIDES
+            if (typeof sdSS.slideBox != "undefined") {
+            	// SETUP BOX SLIDES
+                
+				// VARIABLES
+                sdSS.slideNum = [];
 
-	// add links to slides
-	if(typeof sdSlideLinks != "undefined") seydoggy.dom.pageHeader.rwAddLinks(sdSlideLinks);
-});
+                // determine stack or snippet
+                if (sdContentSlide.length) {
+                    sdContentSlide.each(function(i) {
+                        sdSS.slideNum[i++] = (sdContentSlide.index(this)) + sdContentIndex;
+                    });
+                }
+
+                // set array length
+                arrlen = sdSS.slideNum.length;
+
+				// transfer header styles to parent div
+                sdSlideshow.css({
+                    'background-image': pageHeader.css('background-image'),
+                    'background-position-x': pageHeader.css('background-position-x'),
+                    'background-position-y': pageHeader.css('background-position-y'),
+                    'background-color': pageHeader.css('background-color'),
+					'height' : pageHeader.css('height')
+                });
+                // clean up what's there
+                pageHeader.add(ec1).remove();
+				
+                // add box slides to slideshow
+                for (i; i < arrlen; ++i) {
+                    sdSlideshow.append('<div class="pageHeader" id="sdSlideBox' + sdSS.slideNum[i] + '"></div>');
+                    jq.add('div#mySdSlideBox' + sdSS.slideNum[i]).appendTo('div#sdSlideBox' + sdSS.slideNum[i]).show();
+                }
+                // if header height is variable set .seydoggySlideshow height to content height
+                if (isVariable) sdSlideshow.sdSetHeight(sdContentSlide, 0);
+            } else {
+                // SET UP IMAGE SLIDES
+				
+                // clean up what's there
+                pageHeader.remove();
+
+                if (typeof sdSS.slideWH != "undefined") {
+					// WAREHOUSE
+	                arrlen = sdSS.slideWH.length;
+                    for (i; i < arrlen; ++i) {
+                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + sdSS.slideWH[i] + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
+                    }
+                } else if (typeof sdSlideWH != "undefined") {
+					// WAREHOUSE (legacy API support)
+	                arrlen = sdSlideWH.length;
+                    for (i; i < arrlen; ++i) {
+                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + sdSlideWH[i] + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
+                    }
+                } else if (typeof sdSS.slideNum != "undefined") {
+                    // LOCAL
+                    arrlen = sdSS.slideNum.length;
+                    for (i; i < arrlen; ++i) {
+                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + RwGet.pathto('images/editable_images/header' + sdSS.slideNum[i] + '.' + sdSS.imgType) + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
+                    }
+				} else {
+					// LOCAL (legacy API support)
+                    arrlen = sdSlideNum.length;
+                    for (i; i < arrlen; ++i) {
+                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + RwGet.pathto('images/editable_images/header' + sdSlideNum[i] + '.' + sdSS.imgType) + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
+                    }
+				}
+
+                // make ExtraContent visible
+                preContent.css('z-index', '100');
+
+                // if header height is variable set .seydoggySlideshow height to content height
+                if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
+            }
+
+            // START THE SLIDESHOW
+            sdSlideshow.cycle({
+                fx: sdSS.effect,
+                timeout: sdSS.timeout,
+                speed: sdSS.speed
+            });
+        }
+
+        // if header height is variable set .seydoggySlideshow height to content height
+        if (typeof sdSS.slideBox == "undefined" && isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
+
+        // redefine pageHeader to account for DOM creations
+        sdSS.pageHeader = sdSlideshow.find('div.pageHeader');
+
+        // add links to slides
+        if (typeof sdSS.slideLinks != "undefined") sdSS.pageHeader.rwAddLinks(sdSS.slideLinks);
+        // add links to slides (legacy API support)
+        if (typeof sdSlideLinks != "undefined") sdSS.pageHeader.rwAddLinks(sdSlideLinks);
+
+		// add new classes to DOM .pageHeaders
+		if (sdSS.plusClass != '') sdSS.pageHeader.addClass(sdSS.plusClass);
+
+        // clean up sdSlideBox backgrounds
+        if (typeof sdSS.slideBox != "undefined") sdSS.pageHeader.css('background', 'transparent');
+
+        // set width of header
+        sdSS.pageHeader.width(headerWidth);
+        preContent.width(headerWidth - sdSS.widthAdjust);
+    }
+})(jQuery);

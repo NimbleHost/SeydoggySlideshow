@@ -1,2 +1,2 @@
-var sdSlideNum='';
-var sdSlideBox = true;
+sdSS.slideNum='';
+sdSS.slideBox = true;

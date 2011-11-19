@@ -5,6 +5,8 @@
 	<title>%title%</title>
 	<script>RwSet = {pathto: "%pathto(javascript.js)%",baseurl: "%base_url%"};</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.cycle/2.99/jquery.cycle.all.min.js"></script>
+	<script src="%pathto(scripts/slideshow/seydoggy.slideshow.js)%"></script>
 	
 	<link rel="stylesheet" type="text/css" media="screen" href="%pathto(styles.css)%" />
 	<link rel="stylesheet" type="text/css" media="print" href="%pathto(css/print.css)%" />
@@ -28,45 +30,55 @@
 			<hgroup class="title">
 				<h1 class="site_title">%site_title%</h1>
 				<h2 class="site_slogan">%site_slogan%</h2>
-			</hgroup><!-- .title -->
+			</hgroup>
 			<div class="clear"></div>
-		</header><!-- .siteHeader -->
+		</header>
 		<div class="wrapperTBH">
-			<nav id="toolbar_horizontal">%toolbar%</nav><!-- #toolbar_horizontal -->
-		</div><!-- .wrapperTBH -->
+			<nav id="toolbar_horizontal">%toolbar%</nav>
+		</div>
 		<div class="clear"></div>
+		
+		<!--
+			THIS IS THE START OF THE SLIDESHOW CONTAINER
+		-->
 		<div class="headerContainer">
 			<div id="extraContainer1" class="preContent">
 				<!--extra user content renders here-->
-			</div><!-- #extraContainer1 .preContent -->
+			</div>
 			<div class="seydoggySlideshow">
-				<div class="pageHeader"></div><!-- .pageHeader -->
-			</div><!-- .seydoggySlideshow -->
+				<div class="pageHeader">
+					<!--slideshow images/content renders here-->
+				</div>
+			</div>
 			<div class="clear"></div>
-		</div><!-- .headerContainer -->
+		</div>
+
+		<!--
+			THIS IS THE END OF THE SLIDESHOW CONTAINER
+		-->
+
 		<div class="wrapperContent">
 			<section class="mainContent">
 				%content%
-			</section><!-- .mainContent -->
+			</section>
 			<aside class="sidebarContent">
-				<nav id="toolbar_vertical"></nav><!-- #toolbar_vertical -->
 				<section class="sidebar">
 					<div class="sidebar_title">
 						%sidebar_title%
-					</div><!-- .sidebar_title -->
+					</div>
 					%sidebar%
-				</section><!-- .sidebar -->
+				</section>
 				<section class="plugin_sidebar">
 					%plugin_sidebar%
-				</section><!-- .plugin_sidebar -->
-			</aside><!-- .sidebarContent -->
+				</section>
+			</aside>
 			<div class="clear"></div>
-		</div><!-- .wrapperContent -->
+		</div>
 		<footer>
-			<section class="footer">%footer%</section><!-- .footer -->
+			<section class="footer">%footer%</section>
 			%breadcrumb%
 			<div class="clear"></div>
 		</footer>
-	</div><!-- .wrapper -->
+	</div>
 </body>
 </html>

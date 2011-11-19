@@ -1,2 +1,2 @@
 /* @option Slide show timeout */
-slideshowTimeout = 20000;
+sdSS.timeout = 20000;

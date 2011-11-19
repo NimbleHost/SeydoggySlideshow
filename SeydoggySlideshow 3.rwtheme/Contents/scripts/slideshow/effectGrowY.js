@@ -1,2 +1,2 @@
 /* @option Slide show effect */
-slideshowEffect = 'growY';
+sdSS.effect = 'growY';

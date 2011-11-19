@@ -1,2 +1,2 @@
 /* @option Slide show effect */
-slideshowEffect = 'scrollRight';
+sdSS.effect = 'scrollRight';

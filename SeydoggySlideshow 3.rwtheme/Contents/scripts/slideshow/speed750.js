@@ -1,2 +1,2 @@
 /* @option Slide show speed */
-slideshowSpeed = 750;
+sdSS.speed = 750;

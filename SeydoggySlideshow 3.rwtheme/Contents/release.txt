@@ -1,4 +1,335 @@
+SeydoggySlideshow 3 r6.000
+
+Commit: e66f922
+Date: 2011-11-19 11:34:42 -0500
+
+>>    closed 250/41b:om: Add ability for developer to pass a class to SS3.    <<
+
+ .../41bc3b6c-09e0-4301-8f29-a780084d7336/values    |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+Commit: 44f5a82
+Date: 2011-11-09 17:08:14 -0500
+
+>>    New feature requests: 250/5d4, 250/fa1    <<
+
+ .../41bc3b6c-09e0-4301-8f29-a780084d7336/values    |   17 +++++++++++++++++
+ .../bd318691-8093-4157-987d-d107389ef9a8/body      |   12 ++++++++++++
+ .../bd318691-8093-4157-987d-d107389ef9a8/values    |    8 ++++++++
+ .../5d4c2e9f-0a6a-40f6-9311-86ccd7eccecc/values    |   17 +++++++++++++++++
+ .../2ccb3937-1613-4838-9a29-221d6a8d7587/body      |   13 +++++++++++++
+ .../2ccb3937-1613-4838-9a29-221d6a8d7587/values    |    8 ++++++++
+ .../fa14df2e-6278-4a32-9402-c1d312558bf7/values    |   17 +++++++++++++++++
+ 7 files changed, 92 insertions(+), 0 deletions(-)
+
+Commit: c059629
+Date: 2011-11-08 14:00:26 -0500
+
+>>    Additional optimization.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+Commit: 2658b76
+Date: 2011-11-08 13:54:43 -0500
+
+>>    Added height to css transfer from pageHeader to slideshow.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+Commit: 6104c23
+Date: 2011-11-08 13:45:34 -0500
+
+>>    Removed unneeded variable definition.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    2 --
+ 1 files changed, 0 insertions(+), 2 deletions(-)
+
+Commit: 8c60613
+Date: 2011-11-08 13:21:18 -0500
+
+>>    Changed the position of sdSlideLinks functions.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+Commit: 9d00f46
+Date: 2011-11-02 16:44:49 -0400
+
+>>    Added sdSS.plusClass method for developer API.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    6 +++++-
+ Contents/scripts/theme.js                        |    1 +
+ 2 files changed, 6 insertions(+), 1 deletions(-)
+
+Commit: 28bb502
+Date: 2011-11-02 00:03:55 -0400
+
+>>    Added/updated bugs.    <<
+
+ .../2d38363f-dbdf-42fe-909f-b7fb0d5eda94/values    |   17 +++++++++++++++++
+ .../644b56f9-796e-462d-a74f-cbe49126d4d6/values    |   17 +++++++++++++++++
+ .../f5431ab9-cc3d-433e-a16f-4ca1e19a1b15/values    |   17 +++++++++++++++++
+ 3 files changed, 51 insertions(+), 0 deletions(-)
+
+Commit: 65f1b7f
+Date: 2011-11-01 23:41:13 -0400
+
+>>    Removed dependance on sdVertalign.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    2 --
+ 1 files changed, 0 insertions(+), 2 deletions(-)
+
+Commit: 21af982
+Date: 2011-11-01 23:38:08 -0400
+
+>>    Added sdSS.widthAdjust and sdSS.heightAdjust to the dev API.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |   14 ++++++++------
+ Contents/scripts/theme.js                        |    6 ++++--
+ 2 files changed, 12 insertions(+), 8 deletions(-)
+
+Commit: 32c5042
+Date: 2011-11-01 21:34:59 -0400
+
+>>    Added comment.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+Commit: 3ebb5ee
+Date: 2011-11-01 14:18:34 -0400
+
+Commit: 261276d
+Date: 2011-11-01 14:16:11 -0400
+
+>>    Fixed issue with dom background position shorthand.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+Commit: bbfaa15
+Date: 2011-11-01 13:51:23 -0400
+
+>>    Added be repo.    <<
+
+ .be/id-cache |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+Commit: df87986
+Date: 2011-11-01 13:49:29 -0400
+
+>>    Updated release notes.    <<
+
+ Contents/release.txt |  214 +++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 files changed, 210 insertions(+), 4 deletions(-)
+
+Commit: 5c16818
+Date: 2011-11-01 13:07:34 -0400
+
+>>    Hopefully pushing all bug tracking to remote    <<
+
+ .../1d68648a-cd18-4b54-a594-9cf6047cfc36/values    |   17 +++++++++++++++++
+ .../9f66df19-8ea2-4434-9d4c-3eb273920c17/values    |   17 +++++++++++++++++
+ .../dece66b8-1eac-4460-9a1c-d621dd317bd9/values    |    2 +-
+ 3 files changed, 35 insertions(+), 1 deletions(-)
+
+Commit: 38afb33
+Date: 2011-10-31 18:58:37 -0400
+
+>>    Changed refence to cycle to point to MS CDN version.    <<
+
+ Contents/index.html |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+Commit: daef8cc
+Date: 2011-10-31 18:56:36 -0400
+
+>>    Removed jquery.cycle.all.min.js in favor of CDN version from MS.    <<
+
+ Contents/scripts/slideshow/jquery.cycle.all.min.js |   21 --------------------
+ 1 files changed, 0 insertions(+), 21 deletions(-)
+
+Commit: 8df53fa
+Date: 2011-10-31 18:38:50 -0400
+
+>>    Added scripts/slideshowheaderHeightVariable.js.    <<
+
+ Contents/scripts/slideshow/headerHeightVariable.js |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
+
+Commit: 94f9642
+Date: 2011-10-31 18:37:45 -0400
+
+>>    Changed headerHeighVariable references to sdSS.headerHeightVariable.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+Commit: e1eec5f
+Date: 2011-10-31 18:36:54 -0400
+
+>>    Removed headerHeightVariable.js from css/headerheight/ folder    <<
+
+ Contents/css/headerheight/headerHeightVariable.js |    3 ---
+ 1 files changed, 0 insertions(+), 3 deletions(-)
+
+Commit: 75faba3
+Date: 2011-10-31 18:35:58 -0400
+
+>>    Moved headerHeightVariable.js dependency to to scripts/slideshow folder.    <<
+
+ Contents/Theme.plist |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+Commit: b654df2
+Date: 2011-10-31 18:33:36 -0400
+
+>>    Updated theme components to r6.    <<
+
+ Contents/Info.plist  |    4 ++--
+ Contents/Theme.plist |    2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+Commit: ee64b60
+Date: 2011-10-31 14:58:02 -0400
+
+>>    new TODO concerning making headerHeight var an method of sdSS.    <<
+
+ .../dece66b8-1eac-4460-9a1c-d621dd317bd9/values    |   17 +++++++++++++++++
+ .../ffe67a7d-2500-45ba-8402-86c4c118957c/values    |    2 +-
+ 2 files changed, 18 insertions(+), 1 deletions(-)
+
+Commit: ece7a88
+Date: 2011-10-31 14:53:31 -0400
+
+>>    Changed developer API var names.    <<
+
+ Contents/scripts/theme.js |   16 ++++++++--------
+ 1 files changed, 8 insertions(+), 8 deletions(-)
+
+Commit: f830a57
+Date: 2011-10-31 14:52:55 -0400
+
+>>    Converted whole system to sdSS object. Added support for legacy API as a result.    <<
+
+ Contents/scripts/slideshow/effectBlindX.js       |    2 +-
+ Contents/scripts/slideshow/effectBlindY.js       |    2 +-
+ Contents/scripts/slideshow/effectGrowX.js        |    2 +-
+ Contents/scripts/slideshow/effectGrowY.js        |    2 +-
+ Contents/scripts/slideshow/effectScrollDown.js   |    2 +-
+ Contents/scripts/slideshow/effectScrollLeft.js   |    2 +-
+ Contents/scripts/slideshow/effectScrollRight.js  |    2 +-
+ Contents/scripts/slideshow/effectScrollUp.js     |    2 +-
+ Contents/scripts/slideshow/effectShuffle.js      |    2 +-
+ Contents/scripts/slideshow/effectToss.js         |    2 +-
+ Contents/scripts/slideshow/sdSlideBoxEnabled.js  |    4 +-
+ Contents/scripts/slideshow/seydoggy.slideshow.js |   94 ++++++++++++----------
+ Contents/scripts/slideshow/slideShow11to15.js    |    2 +-
+ Contents/scripts/slideshow/slideShow11to20.js    |    2 +-
+ Contents/scripts/slideshow/slideShow16to20.js    |    2 +-
+ Contents/scripts/slideshow/slideShow1to10.js     |    2 +-
+ Contents/scripts/slideshow/slideShow1to20.js     |    2 +-
+ Contents/scripts/slideshow/slideShow1to5.js      |    2 +-
+ Contents/scripts/slideshow/slideShow6to10.js     |    2 +-
+ Contents/scripts/slideshow/speed1500.js          |    2 +-
+ Contents/scripts/slideshow/speed2000.js          |    2 +-
+ Contents/scripts/slideshow/speed250.js           |    2 +-
+ Contents/scripts/slideshow/speed2500.js          |    2 +-
+ Contents/scripts/slideshow/speed500.js           |    2 +-
+ Contents/scripts/slideshow/speed750.js           |    2 +-
+ Contents/scripts/slideshow/timeout12.js          |    2 +-
+ Contents/scripts/slideshow/timeout16.js          |    2 +-
+ Contents/scripts/slideshow/timeout20.js          |    2 +-
+ Contents/scripts/slideshow/timeout6.js           |    2 +-
+ Contents/scripts/slideshow/timeout8.js           |    2 +-
+ 30 files changed, 82 insertions(+), 72 deletions(-)
+
+Commit: d740bb7
+Date: 2011-10-31 14:50:05 -0400
+
+>>    Optimized styles and centered out SS3 styles. (-b dev3.1.0)    <<
+
+ Contents/styles.css |  143 +++++++++++++-------------------------------------
+ 1 files changed, 37 insertions(+), 106 deletions(-)
+
+Commit: 051bcb7
+Date: 2011-10-31 06:49:29 -0400
+
+>>    EDITOR=VISUAL    <<
+
+ .../ffe67a7d-2500-45ba-8402-86c4c118957c/values    |   17 +++++++++++++++++
+ .be/version                                        |    1 +
+ 2 files changed, 18 insertions(+), 0 deletions(-)
+
+Commit: 16a8c02
+Date: 2011-10-28 17:57:29 -0400
+
+>>    Removed CSS for .seydoggySlideshow .sdSlideBoxStack,.seydoggySlideshow .sdSlideBoxSnippet    <<
+
+ Contents/styles.css |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+Commit: b8c24cd
+Date: 2011-10-28 17:56:27 -0400
+
+>>    Added ExtraContent area 1, moved options, tweaks, etc...    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |   43 +++++++++++++++-------
+ 1 files changed, 30 insertions(+), 13 deletions(-)
+
+Commit: 6597275
+Date: 2011-10-28 17:55:14 -0400
+
+>>    Purged everything but the function invocation. Added instructions.    <<
+
+ Contents/scripts/theme.js |   49 +++++++++++++++++++++++++-------------------
+ 1 files changed, 28 insertions(+), 21 deletions(-)
+
+Commit: caf45c9
+Date: 2011-10-28 16:22:26 -0400
+
+>>    Cleaned up markup and improved commenting to make it more clear. (-b dev3.1.0)    <<
+
+ Contents/index.html |   44 +++++++++++++++++++++++++++-----------------
+ 1 files changed, 27 insertions(+), 17 deletions(-)
+
+Commit: dca1efd
+Date: 2011-10-28 13:18:09 -0400
+
+>>    Removal of all slideshow related scripts from file (-b dev3.1.0)    <<
+
+ Contents/scripts/theme.js |   43 ++++++++-----------------------------------
+ 1 files changed, 8 insertions(+), 35 deletions(-)
+
+Commit: a4d96e1
+Date: 2011-10-28 13:17:17 -0400
+
+>>    Complete rewrite of method into $.function. Included all necessary scripts and plugins. (-b dev3.1.0)    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |  263 +++++++++++-----------
+ 1 files changed, 130 insertions(+), 133 deletions(-)
+
+Commit: cca2acd
+Date: 2011-10-28 13:15:52 -0400
+
+>>    Added resource references for jquery.cycle.all.min.js and seydoggy.slideshow.js (-b dev3.1.0)    <<
+
+ Contents/index.html |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
 SeydoggySlideshow 3 r5.000
+
+Commit: f8bd68d
+Date: 2011-10-27 13:17:42 -0400
+
+>>    Updated theme versioning to 5.    <<
+
+ Contents/Info.plist  |    4 ++--
+ Contents/Theme.plist |    2 +-
+ Contents/release.txt |   20 ++++++++++++++++++++
+ 3 files changed, 23 insertions(+), 3 deletions(-)
 
 Commit: ec8c5a1
 Date: 2011-10-27 13:05:16 -0400
@@ -21,8 +352,8 @@ Date: 2011-10-27 12:56:12 -0400
 SeydoggySlideshow 3 r4.000 - 08-18-11 19:56
 Commit Files:
 
-Contents/Info.plist
-Contents/Theme.plist
+Contents/Info
+Contents/Theme
 Contents/scripts/slideshow/seydoggy.slideshow.js
 Contents/scripts/theme.js
 Using Message:
@@ -35,8 +366,8 @@ release notes:
 
 Commit Files:
 
-Contents/Info.plist
-Contents/Theme.plist
+Contents/Info
+Contents/Theme
 Contents/release.txt
 Contents/scripts/slideshow/seydoggy.slideshow.js
 
