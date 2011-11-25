@@ -1,4 +1,49 @@
+SeydoggySlideshow 3 r7.000
+
+Commit: a04a956
+Date: 2011-11-25 14:35:24 -0500
+
+>>    Corrected issue with SlideBox Stacks not rendering full width when full width was not used.    <<
+
+ Contents/Info.plist                              |    4 ++--
+ Contents/Theme.plist                             |    2 +-
+ Contents/scripts/slideshow/seydoggy.slideshow.js |    4 ++--
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
+
 SeydoggySlideshow 3 r6.000
+
+Commit: bfbc0b4
+Date: 2011-11-19 11:57:27 -0500
+
+>>    Updated to -b ss3.1.0 version.    <<
+
+ Contents/scripts/slideshow/seydoggy.slideshow.js |  165 ++++++++++++++++++++++
+ 1 files changed, 165 insertions(+), 0 deletions(-)
+
+Commit: a064afd
+Date: 2011-11-19 11:56:19 -0500
+
+>>    Updated to -b ss3.1.0 version.    <<
+
+ Contents/release.txt |  445 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 445 insertions(+), 0 deletions(-)
+
+Commit: 056e20c
+Date: 2011-11-19 11:39:38 -0500
+
+>>    Updated release notes.    <<
+
+ Contents/release.txt |  101 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 101 insertions(+), 0 deletions(-)
+
+Commit: e469ce4
+Date: 2011-11-19 11:36:46 -0500
+
+>>    Stopped tracking .be/id-cache    <<
+
+ .be/id-cache |    5 -----
+ 1 files changed, 0 insertions(+), 5 deletions(-)
 
 Commit: e66f922
 Date: 2011-11-19 11:34:42 -0500

@@ -8,7 +8,7 @@ if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = functio
 // initiate sdSS object
 sdSS = {};
 
-/* SeydoggySlideshow 3.1.0 */
+/* SeydoggySlideshow 3.1.1 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
@@ -89,7 +89,7 @@ sdSS = {};
 				
                 // add box slides to slideshow
                 for (i; i < arrlen; ++i) {
-                    sdSlideshow.append('<div class="pageHeader" id="sdSlideBox' + sdSS.slideNum[i] + '"></div>');
+                    sdSlideshow.append('<div class="pageHeader" id="sdSlideBox' + sdSS.slideNum[i] + '" style="width:' + headerWidth + 'px;"></div>');
                     jq.add('div#mySdSlideBox' + sdSS.slideNum[i]).appendTo('div#sdSlideBox' + sdSS.slideNum[i]).show();
                 }
                 // if header height is variable set .seydoggySlideshow height to content height
