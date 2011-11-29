@@ -1,20 +1,12 @@
 # SeydoggySlideshow #
 **AUTHOR:	Adam Merrifield**   
-**VERSION: 3.1.0**   
+**VERSION: 3.1.1**   
 
 ## About SeydoggySlideshow ##
 
 SeydoggySlideshow is a built-in slide show component of a RapidWeaver theme that is both easy to use and remarkably powerful.
 
 SeydoggySlideshow, now a jQuery plugin, is an implementation of specific methods to account for the complexity of user input and variability that theme usage encounters. The many moving parts of SeydoggySlideshow include [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library"), [Cycle](http://jquery.malsup.com/cycle/), [ExtraContent](https://github.com/seyDoggy/ExtraContent), [SlideBox](http://seydesign.com/slidebox), [sdSetHeight](https://github.com/seyDoggy/sdSetHeight "seyDoggy/sdSetHeight - GitHub"), [RwSetGet](https://github.com/seyDoggy/RwSetGet) and [rwAddLinks](https://github.com/seyDoggy/rwAddLinks).
-
-## What's New in 3.1.0 ##
-
-* SS3.1 is now a jQuery plugin with single file, single call invocation
-* now generates a single global object sdSS
-* new user API to reflect global object name space
-* new developer API for easy customization
-* better optimization
 
 ## Contents ##
 
@@ -1828,3 +1820,15 @@ See the [sdSlideBox Snippet](http://seydesign.com/products/Snippets/sdSlideBox/ 
 ### SeyDoggy SlideBox (slide box stack) ###
 
 For details on how to use the [SlideBox stack](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products"), visit the SlideBox Stack [product page](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products").
+
+## What's New in 3.1.1 ##
+
+* Corrected issue with SlideBox Stacks not rendering full width when full width content was not used
+
+## What's New in 3.1.0 ##
+
+* SS3.1 is now a jQuery plugin with single file, single call invocation
+* now generates a single global object sdSS
+* new user API to reflect global object name space
+* new developer API for easy customization
+* better optimization
