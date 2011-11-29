@@ -20,6 +20,12 @@ Developer implementation it the big change in SS3.1. I recognized that SS3 was n
 
 SS3.1 is now a jQuery plugin, meaning that it's a single file, single call invocation, as far as the scripts are concerned. You still need all the files that support the theme options themselves, but all of those are now contained within the `scripts/slideshow/` folder.
 
+### SS3 via CDN ###
+
+If you'd like your SS3 script to be current (and cached) at all times you can opt to use the CDN version by referencing the resource at `http://seydoggy.github.com/libs/ss3/seydoggy.slideshow.js`. Just keep in mind that you are at the mercy of our updates as this file will always be the most current version pushed to this repo. While I will strive to make sure that this is a stable and bug free version, there is no guarantees that I won't introduce a bug along the way.
+
+So now that you've been warned, if you'd still like to go with the cdn version, replace all further references to `%pathto(scripts/slideshow/seydoggy.slideshow.js)%` (which would be a local copy) with `http://seydoggy.github.com/libs/ss3/seydoggy.slideshow.js` (the copy hosted on github).
+
 ### Basics ###
 
 From soup to nuts, this is all it takes to add SS3.1 to your RapidWeaver theme.
