@@ -22,7 +22,7 @@ SS3.1 is now a jQuery plugin, meaning that it's a single file, single call invoc
 
 ### SS3 via CDN ###
 
-If you'd like your SS3 script to be current (and cached) at all times you can opt to use the CDN version by referencing the resource at `http://seydoggy.github.com/libs/ss3/seydoggy.slideshow.js`. Just keep in mind that you are at the mercy of our updates as this file will always be the most current version pushed to this repo. While I will strive to make sure that this is a stable and bug free version, there is no guarantees that I won't introduce a bug along the way.
+If you'd like your SS3 script to be current (and cached) at all times you can opt to use the CDN version by referencing the resource at `http://seydoggy.github.com/libs/ss3/seydoggy.slideshow.js` for the developer version and `http://seydoggy.github.com/libs/ss3/seydoggy.slideshow.min.js` for the JSmin version. Just keep in mind that you are at the mercy of our updates as this file will always be the most current version pushed to this repo. While I will strive to make sure that this is a stable and bug free version, there is no guarantees that I won't introduce a bug along the way.
 
 So now that you've been warned, if you'd still like to go with the cdn version, replace all further references to `%pathto(scripts/slideshow/seydoggy.slideshow.js)%` (which would be a local copy) with `http://seydoggy.github.com/libs/ss3/seydoggy.slideshow.js` (the copy hosted on github).
 
