@@ -8,7 +8,7 @@ if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = functio
 // initiate sdSS object
 sdSS = {};
 
-/* SeydoggySlideshow 3.1.1 */
+/* SeydoggySlideshow 3.1.2 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
@@ -37,8 +37,6 @@ sdSS = {};
         	slideHeader = sdSlideshow.add(pageHeader),
         	ec1 = hContainer.find('div#extraContainer' + sdSS.ecValue),
 			myEC = hContainer.find('div#myExtraContent' + sdSS.ecValue),
-        	preContent = hContainer.find('div.preContent'),
-        	preContentWidth = preContent.width(),
         	sdContentSlide = jq.add('div.sdSlideBoxStack'),
         	sdContentIndex = 0,
         	headerWidth = sdSlideshow.width(),
@@ -51,8 +49,7 @@ sdSS = {};
 			if (myEC.length) {
 				myEC.find('script').remove().end().appendTo(ec1).show();
 				// !hide !empty ExtraContent area
-				preContent.show();
-				ec1.show;
+				ec1.show();
 			}
 		}
 
@@ -128,7 +125,7 @@ sdSS = {};
 				}
 
                 // make ExtraContent visible
-                preContent.css('z-index', '100');
+                ec1.css('z-index', '100');
 
                 // if header height is variable set .seydoggySlideshow height to content height
                 if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
@@ -141,9 +138,6 @@ sdSS = {};
                 speed: sdSS.speed
             });
         }
-
-        // if header height is variable set .seydoggySlideshow height to content height
-        if (typeof sdSS.slideBox == "undefined" && isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
 
         // redefine pageHeader to account for DOM creations
         sdSS.pageHeader = sdSlideshow.find('div.pageHeader');
@@ -161,6 +155,9 @@ sdSS = {};
 
         // set width of header
         sdSS.pageHeader.width(headerWidth);
-        preContent.width(headerWidth - sdSS.widthAdjust);
+        ec1.width(headerWidth - sdSS.widthAdjust);
+
+        // if header height is variable set .seydoggySlideshow height to content height
+        if (typeof sdSS.slideBox == "undefined" && isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
     }
 })(jQuery);
