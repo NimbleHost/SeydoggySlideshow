@@ -1,6 +1,6 @@
 # SeydoggySlideshow #
 **AUTHOR:	Adam Merrifield**   
-**VERSION: 3.1.2**   
+**VERSION: 3.1.3**   
 
 ## About SeydoggySlideshow ##
 
@@ -1818,7 +1818,7 @@ Paste this into any content area in RapidWeaver:
 		Some sample content. Add whatever you like here.
 	</div>
 
-* if used in a styled text ares be sure to select the HTML code portions and ignore formatting.
+* if used in a styled text ares be sure to select the HTML code portions and ignore formatting.
 * as you add more slide containers, increase the trailing number found in "mySdSlideBox1" to 2, then 3, etc...
 
 See the [sdSlideBox Snippet](http://seydesign.com/products/Snippets/sdSlideBox/ "seyDesign - sdSlideBox &rarr; Snippets &rarr; products") page for the .rwsnippet download and detailed installation and usage instructions.
@@ -1826,6 +1826,10 @@ See the [sdSlideBox Snippet](http://seydesign.com/products/Snippets/sdSlideBox/ 
 ### SeyDoggy SlideBox (slide box stack) ###
 
 For details on how to use the [SlideBox stack](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products"), visit the SlideBox Stack [product page](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products").
+
+## What's New in 3.1.2 ##
+
+* Fixed an issue where some legacy themes would not render EC1.
 
 ## What's New in 3.1.2 ##
 

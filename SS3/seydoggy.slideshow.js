@@ -8,7 +8,7 @@ if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = functio
 // initiate sdSS object
 sdSS = {};
 
-/* SeydoggySlideshow 3.1.2 */
+/* SeydoggySlideshow 3.1.3 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
@@ -36,6 +36,7 @@ sdSS = {};
         	pageHeader = sdSlideshow.find('div.pageHeader'),
         	slideHeader = sdSlideshow.add(pageHeader),
         	ec1 = hContainer.find('div#extraContainer' + sdSS.ecValue),
+			preContent = ec1.parent('div.preContent'),
 			myEC = hContainer.find('div#myExtraContent' + sdSS.ecValue),
         	sdContentSlide = jq.add('div.sdSlideBoxStack'),
         	sdContentIndex = 0,
@@ -50,6 +51,7 @@ sdSS = {};
 				myEC.find('script').remove().end().appendTo(ec1).show();
 				// !hide !empty ExtraContent area
 				ec1.show();
+				preContent.show();
 			}
 		}
 
