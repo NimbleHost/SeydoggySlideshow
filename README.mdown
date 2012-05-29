@@ -1,6 +1,6 @@
 # SeydoggySlideshow #
 **AUTHOR:	Adam Merrifield**   
-**VERSION: 3.1.3**   
+**VERSION: 3.2.0**   
 
 ## About SeydoggySlideshow ##
 
@@ -13,12 +13,14 @@ SeydoggySlideshow, now a jQuery plugin, is an implementation of specific methods
 * README.mdown
 * SeydoggySlideshow 3.rwtheme - an example RapidWeaver theme with SS3 enabled
 * SeydoggySlideshow Sample.rwsw - a sample RapidWeaver project using SS3
+* demo - an export of the Sample.rwsw
+* SS3 - just the straight scripts, developer and minified
 
 ## Developer Implementation ##
 
-Developer implementation it the big change in SS3.1. I recognized that SS3 was not the most straight forward script to implement so I took a great deal of time and effort to improve that. I also have to give a nod to Will Woodgate, an early adopter of SS3, for shedding some light of how developers might want to use and implement SS3 in the real world.
+Developer implementation is the big change since SS3.1. I recognized that SS3 was not the most straight forward script to implement so I took a great deal of time and effort to improve that. I also have to give a nod to Will Woodgate, an early adopter of SS3, for shedding some light of how developers might want to use and implement SS3 in the real world.
 
-SS3.1 is now a jQuery plugin, meaning that it's a single file, single call invocation, as far as the scripts are concerned. You still need all the files that support the theme options themselves, but all of those are now contained within the `scripts/slideshow/` folder.
+SS3 is now a jQuery plugin (since 3.1), meaning that it's a single file, single call invocation, as far as the scripts are concerned. You still need all the files that support the theme options themselves, but all of those are now contained within the `scripts/slideshow/` folder.
 
 ### SS3 via CDN ###
 
@@ -28,13 +30,13 @@ So now that you've been warned, if you'd still like to go with the cdn version, 
 
 ### Basics ###
 
-From soup to nuts, this is all it takes to add SS3.1 to your RapidWeaver theme.
+From soup to nuts, this is all it takes to add SS3 to your RapidWeaver theme.
 
 1. Call the resources in your index.html head, somewhere high up in the chain of command:
 
 		<script>RwSet = {pathto: "%pathto(javascript.js)%",baseurl: "%base_url%"};</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/jquery.cycle/2.99/jquery.cycle.all.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.cycle/2.99/jquery.cycle.all.min.js"></script>
 		<script src="%pathto(scripts/slideshow/seydoggy.slideshow.js)%"></script>
 		
 2. Add the slideshow containers somewhere in your index.html:
@@ -1451,6 +1453,31 @@ From soup to nuts, this is all it takes to add SS3.1 to your RapidWeaver theme.
 					<key>Type</key>
 					<string>Javascript</string>
 				</dict>
+				<dict>
+					<key>DisplayName</key>
+					<dict>
+						<key>de</key>
+						<string>Random</string>
+						<key>en</key>
+						<string>Random</string>
+						<key>fr</key>
+						<string>Random</string>
+						<key>it</key>
+						<string>Random</string>
+						<key>ja</key>
+						<string>Random</string>
+					</dict>
+					<key>Enabled</key>
+					<false/>
+					<key>Files</key>
+					<array>
+						<string>scripts/slideshow/effectRandom.js</string>
+					</array>
+					<key>Name</key>
+					<string>Random</string>
+					<key>Type</key>
+					<string>Javascript</string>
+				</dict>
 			</array>
 			<key>GroupName</key>
 			<string>Slide show effect</string>
@@ -1652,6 +1679,153 @@ From soup to nuts, this is all it takes to add SS3.1 to your RapidWeaver theme.
 			<key>GroupSelectionLimit</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>GroupDisplayName</key>
+			<dict>
+				<key>de</key>
+				<string>Slide show settings</string>
+				<key>en</key>
+				<string>Slide show settings</string>
+				<key>fr</key>
+				<string>Slide show settings</string>
+				<key>it</key>
+				<string>Slide show settings</string>
+				<key>ja</key>
+				<string>Slide show settings</string>
+			</dict>
+			<key>GroupMembers</key>
+			<array>
+				<dict>
+					<key>DisplayName</key>
+					<dict>
+						<key>de</key>
+						<string>Auto stop</string>
+						<key>en</key>
+						<string>Auto stop</string>
+						<key>fr</key>
+						<string>Auto stop</string>
+						<key>it</key>
+						<string>Auto stop</string>
+						<key>ja</key>
+						<string>Auto stop</string>
+					</dict>
+					<key>Enabled</key>
+					<false/>
+					<key>Files</key>
+					<array>
+						<string>scripts/slideshow/settingAutostop.js</string>
+					</array>
+					<key>Name</key>
+					<string>Auto stop</string>
+					<key>Type</key>
+					<string>Javascript</string>
+				</dict>
+				<dict>
+					<key>DisplayName</key>
+					<dict>
+						<key>de</key>
+						<string>Navigation</string>
+						<key>en</key>
+						<string>Navigation</string>
+						<key>fr</key>
+						<string>Navigation</string>
+						<key>it</key>
+						<string>Navigation</string>
+						<key>ja</key>
+						<string>Navigation</string>
+					</dict>
+					<key>Enabled</key>
+					<false/>
+					<key>Files</key>
+					<array>
+						<string>scripts/slideshow/settingNavigation.js</string>
+					</array>
+					<key>Name</key>
+					<string>Navigation</string>
+					<key>Type</key>
+					<string>Javascript</string>
+				</dict>
+				<dict>
+					<key>DisplayName</key>
+					<dict>
+						<key>de</key>
+						<string>Pager</string>
+						<key>en</key>
+						<string>Pager</string>
+						<key>fr</key>
+						<string>Pager</string>
+						<key>it</key>
+						<string>Pager</string>
+						<key>ja</key>
+						<string>Pager</string>
+					</dict>
+					<key>Enabled</key>
+					<false/>
+					<key>Files</key>
+					<array>
+						<string>scripts/slideshow/settingPager.js</string>
+					</array>
+					<key>Name</key>
+					<string>Pager</string>
+					<key>Type</key>
+					<string>Javascript</string>
+				</dict>
+				<dict>
+					<key>DisplayName</key>
+					<dict>
+						<key>de</key>
+						<string>Pause on hover</string>
+						<key>en</key>
+						<string>Pause on hover</string>
+						<key>fr</key>
+						<string>Pause on hover</string>
+						<key>it</key>
+						<string>Pause on hover</string>
+						<key>ja</key>
+						<string>Pause on hover</string>
+					</dict>
+					<key>Enabled</key>
+					<false/>
+					<key>Files</key>
+					<array>
+						<string>scripts/slideshow/settingPause.js</string>
+					</array>
+					<key>Name</key>
+					<string>Pause on hover</string>
+					<key>Type</key>
+					<string>Javascript</string>
+				</dict>
+				<dict>
+					<key>DisplayName</key>
+					<dict>
+						<key>de</key>
+						<string>Random order</string>
+						<key>en</key>
+						<string>Random order</string>
+						<key>fr</key>
+						<string>Random order</string>
+						<key>it</key>
+						<string>Random order</string>
+						<key>ja</key>
+						<string>Random order</string>
+					</dict>
+					<key>Enabled</key>
+					<false/>
+					<key>Files</key>
+					<array>
+						<string>scripts/slideshow/settingRandom.js</string>
+					</array>
+					<key>Name</key>
+					<string>Random order</string>
+					<key>Type</key>
+					<string>Javascript</string>
+				</dict>
+			</array>
+			<key>GroupName</key>
+			<string>Slide show settings</string>
+			<key>GroupSelectionLimit</key>
+			<integer>2</integer>
+		</dict>
 		
 6. Update your styles.css with the following:
 
@@ -1671,6 +1845,51 @@ From soup to nuts, this is all it takes to add SS3.1 to your RapidWeaver theme.
 		.sdSlideBoxStack, .sdSlideBoxSnippet {
 			display: none;
 		}
+		.sdSlideNav a{
+			background-color: rgba(0,0,0,0.3);
+			border-radius:0.07em;
+			color: rgba(250,250,250,0.5);
+			display: block;
+			font-family: Arial, Helvetica;
+			font-size: 2em;
+			height:0.75em;
+			line-height:0.75em;
+			margin-top: -0.45em;
+			padding: 0 0.3em 0.2em;
+			position: absolute;
+			text-decoration: none;
+			top:50%;
+			vertical-align: middle;
+			z-index: 50;
+		}
+		.sdSlideNav a.prev{
+			left: 0.2em;
+		}
+		.sdSlideNav a.next{
+			right: 0.2em;
+		}
+		.sdSlideNav a:hover{
+			text-decoration: none;
+		}
+		.sdSlidePager{
+			bottom:0.05em;
+			display: inline;
+			font-size: 5em;
+			left: 50%;
+			position: absolute;
+			z-index: 50;
+		}
+		.sdSlidePager a{
+			color: rgba(89, 199, 247,0.2);
+			text-decoration: none;
+			text-shadow: 0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(250,250,250,0.1);
+		}
+		.sdSlidePager a.activeSlide{
+			color: rgba(89, 199, 247,0.5);
+		}
+		.sdSlidePager a:hover{
+			text-decoration: none;
+		}
 		.headerContainer {
 			margin: 0;
 			padding: 1em 0;
@@ -1680,6 +1899,13 @@ From soup to nuts, this is all it takes to add SS3.1 to your RapidWeaver theme.
 			margin: 0 0.9em 0 0;
 			padding: 1em;
 			position: absolute;
+		}
+		
+		/* Sample responsive styles to make banner scale */
+		@media only screen and (max-width : 1024px) {
+			body{min-width:100%;}
+			.wrapper{width:90%}
+			.pageHeader{background-size:cover;}
 		}
 		
 7. Invoke the slideshow by adding this in any javascript file:
@@ -1739,6 +1965,7 @@ Using the basic features of SeydoggySlideshow 3 (or SS3) in any SS3 enabled them
 * Slide show timeout - duration of the pause between slide transitions
 * Slide show effect - the type of slide animation
 * Slide show speed - the speed of the actual transition
+* Slide show settings (new in SS3.2) - various optional settings like pagination and navigation
 
 ### Advanced Usage ###
 
@@ -1827,7 +2054,19 @@ See the [sdSlideBox Snippet](http://seydesign.com/products/Snippets/sdSlideBox/ 
 
 For details on how to use the [SlideBox stack](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products"), visit the SlideBox Stack [product page](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products").
 
-## What's New in 3.1.2 ##
+## What's New in 3.2.0 ##
+
+* New settings
+	* auto stop
+	* navigation
+	* pagination
+	* pause on hover
+	* random order
+* Removed legacy API support
+* Plays better with responsive layouts
+* General cleanup and efficiency improvements
+
+## What's New in 3.1.3 ##
 
 * Fixed an issue where some legacy themes would not render EC1.
 
