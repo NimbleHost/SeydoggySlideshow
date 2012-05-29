@@ -26,11 +26,10 @@
 				<dict/>
 			</dict>
 			<key>Files</key>
-			<array>
-				<string>Data.archive</string>
-			</array>
+			<array/>
 			<key>Subsandwiches</key>
 			<array>
+				<string>Data</string>
 				<string>PageAttributes</string>
 			</array>
 		</dict>

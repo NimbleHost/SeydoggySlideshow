@@ -26,6 +26,8 @@
 				<string>self</string>
 				<key>FilenameExtension</key>
 				<string>html</string>
+				<key>FolderName</key>
+				<string>/</string>
 				<key>HasCustomThemeStyle</key>
 				<true/>
 				<key>ImageFormat</key>
@@ -33,7 +35,7 @@
 				<key>ImageQuality</key>
 				<string>High</string>
 				<key>IndexFilename</key>
-				<string>index.html</string>
+				<string>snippet.html</string>
 				<key>OutputFormat</key>
 				<string>Default</string>
 				<key>OutputXMLDeclaration</key>
@@ -52,6 +54,8 @@
 						<string>Height (header/slide show) [EC 1].Variable</string>
 						<string>Sidebar position.Right</string>
 						<string>Slide show effect.Blind X</string>
+						<string>Slide show settings.Navigation</string>
+						<string>Slide show settings.Pager</string>
 						<string>Slide show speed.1 second</string>
 						<string>Slide show timeout.4 seconds</string>
 						<string>Slide show type.Content (SlideBox stack/snippet)</string>

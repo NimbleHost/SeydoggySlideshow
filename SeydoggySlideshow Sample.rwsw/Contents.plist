@@ -56,6 +56,8 @@
 					<true/>
 					<key>CruftlessLinksEnabled</key>
 					<false/>
+					<key>DefaultExportPath</key>
+					<string>/Users/adam/github/SeydoggySlideshow/demo</string>
 					<key>DirectoryIndexFilenames</key>
 					<array>
 						<string>index.htm</string>

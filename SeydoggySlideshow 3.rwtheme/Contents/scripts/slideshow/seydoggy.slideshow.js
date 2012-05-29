@@ -8,7 +8,7 @@ if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = functio
 // initiate sdSS object
 sdSS = {};
 
-/* SeydoggySlideshow 3.1.3 */
+/* SeydoggySlideshow 3.2.0 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
@@ -34,6 +34,7 @@ sdSS = {};
         	hContainer = jq.add('div' + sdSS.wrapper),
         	sdSlideshow = hContainer.find('div' + sdSS.target),
         	pageHeader = sdSlideshow.find('div.pageHeader'),
+			sdSlidePager = '',
         	slideHeader = sdSlideshow.add(pageHeader),
         	ec1 = hContainer.find('div#extraContainer' + sdSS.ecValue),
 			preContent = ec1.parent('div.preContent'),
@@ -41,26 +42,43 @@ sdSS = {};
         	sdContentSlide = jq.add('div.sdSlideBoxStack'),
         	sdContentIndex = 0,
         	headerWidth = sdSlideshow.width(),
-        	headerHeight = pageHeader.css('height');
+        	headerHeight = pageHeader.css('height'),
+			nextClass = '',
+			prevClass = '',
+			plusClass = 0;
+			
+		// set plusClass
+		sdSS.plusClass != '' ? plusClass = ' ' + sdSS.plusClass : plusClass = ''; 
+
+		// if SlideBox Stacks is not found, use SlideBox Snippet
+        if (!sdContentSlide.length) sdContentSlide = jq.add('div.sdSlideBoxSnippet'), sdContentIndex = 1;
+			
 
 		// EXTRACONTENT AREA 1
+
 		// if the first ExtraContent hasn't yet been propogated
 		if (!myEC.length) {
 			myEC = jq.add('div#myExtraContent' + sdSS.ecValue);
 			if (myEC.length) {
 				myEC.find('script').remove().end().appendTo(ec1).show();
+
 				// !hide !empty ExtraContent area
-				ec1.show();
+				ec1.show().width(headerWidth - sdSS.widthAdjust).css('z-index', '100');
 				preContent.show();
+
+                // if header height is variable set .seydoggySlideshow height to content height
+                if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
 			}
 		}
-
-        if (!sdContentSlide.length) sdContentSlide = jq.add('div.sdSlideBoxSnippet'), sdContentIndex = 1;
-
-        if ((typeof sdSS.slideNum != "undefined") || (typeof sdSS.slideWH != "undefined") || (typeof sdSlideNum != "undefined") || (typeof sdSlideWH != "undefined")) {
+		
+		// if Slideshow is enabled in some form
+        if ((typeof sdSS.slideNum != "undefined") || (typeof sdSS.slideWH != "undefined")) {
 
 			// SETUP SLIDES
+			
+			// if SlideBox option is used
             if (typeof sdSS.slideBox != "undefined") {
+
             	// SETUP BOX SLIDES
                 
 				// VARIABLES
@@ -82,19 +100,24 @@ sdSS = {};
                     'background-position-x': pageHeader.css('background-position-x'),
                     'background-position-y': pageHeader.css('background-position-y'),
                     'background-color': pageHeader.css('background-color'),
+                    'background-size': pageHeader.css('background-size'),
 					'height' : pageHeader.css('height')
                 });
+
                 // clean up what's there
                 pageHeader.add(ec1).remove();
 				
                 // add box slides to slideshow
                 for (i; i < arrlen; ++i) {
-                    sdSlideshow.append('<div class="pageHeader" id="sdSlideBox' + sdSS.slideNum[i] + '" style="width:' + headerWidth + 'px;"></div>');
+                    sdSlideshow.append('<div class="pageHeader' + plusClass + '" id="sdSlideBox' + sdSS.slideNum[i] + '" style="background: transparent; width:' + headerWidth + 'px;"/>');
                     jq.add('div#mySdSlideBox' + sdSS.slideNum[i]).appendTo('div#sdSlideBox' + sdSS.slideNum[i]).show();
                 }
+
                 // if header height is variable set .seydoggySlideshow height to content height
                 if (isVariable) sdSlideshow.sdSetHeight(sdContentSlide, 0);
             } else {
+				// else if standard slides/snippets are used
+
                 // SET UP IMAGE SLIDES
 				
                 // clean up what's there
@@ -104,62 +127,71 @@ sdSS = {};
 					// WAREHOUSE
 	                arrlen = sdSS.slideWH.length;
                     for (i; i < arrlen; ++i) {
-                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + sdSS.slideWH[i] + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
+                        sdSlideshow.append('<div class="pageHeader' + plusClass + '" style="background: url(' + sdSS.slideWH[i] + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"/>');
                     }
-                } else if (typeof sdSlideWH != "undefined") {
-					// WAREHOUSE (legacy API support)
-	                arrlen = sdSlideWH.length;
-                    for (i; i < arrlen; ++i) {
-                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + sdSlideWH[i] + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
-                    }
-                } else if (typeof sdSS.slideNum != "undefined") {
+                } else {
                     // LOCAL
                     arrlen = sdSS.slideNum.length;
                     for (i; i < arrlen; ++i) {
-                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + RwGet.pathto('images/editable_images/header' + sdSS.slideNum[i] + '.' + sdSS.imgType) + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
-                    }
-				} else {
-					// LOCAL (legacy API support)
-                    arrlen = sdSlideNum.length;
-                    for (i; i < arrlen; ++i) {
-                        sdSlideshow.append('<div class="pageHeader" style="background: url(' + RwGet.pathto('images/editable_images/header' + sdSlideNum[i] + '.' + sdSS.imgType) + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"></div><!-- .pageHeader -->');
+                        sdSlideshow.append('<div class="pageHeader' + plusClass + '" style="background: url(' + RwGet.pathto('images/editable_images/header' + sdSS.slideNum[i] + '.' + sdSS.imgType) + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"/>');
                     }
 				}
-
-                // make ExtraContent visible
-                ec1.css('z-index', '100');
-
-                // if header height is variable set .seydoggySlideshow height to content height
-                if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
             }
+
+            // SLIDESHOW SETTINGS
+
+			// if navigation is selected
+			if (sdSS.navigation == true) {
+				
+				// create navigation elements
+				sdSlideshow.append('<div class="sdSlideNav"><a class="prev" href="#">&lsaquo;</a><a class="next" href="#">&rsaquo;</a></div>');
+				nextClass = '.sdSlideNav .next', prevClass = '.sdSlideNav .prev';
+				
+				// if slidebox is not in use
+				if (typeof sdSS.slideBox == 'undefined') {
+					
+					// make extracontent 1 smaller on each side
+					var navWidth = jq.add('div.sdSlideNav a.prev, div.sdSlideNav a.next').outerWidth(true);
+					ec1.width(ec1.width() - (navWidth * 2)).css('margin-left', navWidth);
+
+	                // (again) if header height is variable set .seydoggySlideshow height to content height
+	                if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
+				}
+			}
+			
+			// if pager is selected set pager classes
+			if (sdSS.pager != undefined) sdSlideshow.append('<div class="sdSlidePager"/>'), sdSlidePager = sdSlideshow.find('div.sdSlidePager');
+			
 
             // START THE SLIDESHOW
             sdSlideshow.cycle({
+				autostop: sdSS.autostop,
                 fx: sdSS.effect,
-                timeout: sdSS.timeout,
-                speed: sdSS.speed
+				next: nextClass,
+				pager: sdSS.pager,
+				pagerEvent: 'mouseover', 
+			    pause: sdSS.pause,
+			    pauseOnPagerHover: true,
+				prev: prevClass,
+				random: sdSS.random,
+				randomizeEffects: true,
+				slideExpr: '.pageHeader',
+                speed: sdSS.speed,
+                timeout: sdSS.timeout
             });
+			
+            // PAGINATION
+
+			// if pagination is active, dynamically set pagination values
+			if (sdSlidePager.html()) {
+				sdSlidePager.find('a').html('&middot;');
+				sdSlidePager.css('margin-left',(sdSlidePager.width()/2)*(-1));
+			}
         }
 
-        // redefine pageHeader to account for DOM creations
-        sdSS.pageHeader = sdSlideshow.find('div.pageHeader');
+        // SLIDE LINKS
 
         // add links to slides
-        if (typeof sdSS.slideLinks != "undefined") sdSS.pageHeader.rwAddLinks(sdSS.slideLinks);
-        // add links to slides (legacy API support)
-        if (typeof sdSlideLinks != "undefined") sdSS.pageHeader.rwAddLinks(sdSlideLinks);
-
-		// add new classes to DOM .pageHeaders
-		if (sdSS.plusClass != '') sdSS.pageHeader.addClass(sdSS.plusClass);
-
-        // clean up sdSlideBox backgrounds
-        if (typeof sdSS.slideBox != "undefined") sdSS.pageHeader.css('background', 'transparent');
-
-        // set width of header
-        sdSS.pageHeader.width(headerWidth);
-        ec1.width(headerWidth - sdSS.widthAdjust);
-
-        // if header height is variable set .seydoggySlideshow height to content height
-        if (typeof sdSS.slideBox == "undefined" && isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
+        if (typeof sdSS.slideLinks != "undefined") sdSlideshow.find('div.pageHeader').rwAddLinks(sdSS.slideLinks);
     }
 })(jQuery);

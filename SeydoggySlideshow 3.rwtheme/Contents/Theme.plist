@@ -1411,6 +1411,31 @@
 						<key>Type</key>
 						<string>Javascript</string>
 					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Random</string>
+							<key>en</key>
+							<string>Random</string>
+							<key>fr</key>
+							<string>Random</string>
+							<key>it</key>
+							<string>Random</string>
+							<key>ja</key>
+							<string>Random</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/effectRandom.js</string>
+						</array>
+						<key>Name</key>
+						<string>Random</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
 				</array>
 				<key>GroupName</key>
 				<string>Slide show effect</string>
@@ -1616,6 +1641,153 @@
 				<key>GroupDisplayName</key>
 				<dict>
 					<key>de</key>
+					<string>Slide show settings</string>
+					<key>en</key>
+					<string>Slide show settings</string>
+					<key>fr</key>
+					<string>Slide show settings</string>
+					<key>it</key>
+					<string>Slide show settings</string>
+					<key>ja</key>
+					<string>Slide show settings</string>
+				</dict>
+				<key>GroupMembers</key>
+				<array>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Auto stop</string>
+							<key>en</key>
+							<string>Auto stop</string>
+							<key>fr</key>
+							<string>Auto stop</string>
+							<key>it</key>
+							<string>Auto stop</string>
+							<key>ja</key>
+							<string>Auto stop</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/settingAutostop.js</string>
+						</array>
+						<key>Name</key>
+						<string>Auto stop</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Navigation</string>
+							<key>en</key>
+							<string>Navigation</string>
+							<key>fr</key>
+							<string>Navigation</string>
+							<key>it</key>
+							<string>Navigation</string>
+							<key>ja</key>
+							<string>Navigation</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/settingNavigation.js</string>
+						</array>
+						<key>Name</key>
+						<string>Navigation</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Pager</string>
+							<key>en</key>
+							<string>Pager</string>
+							<key>fr</key>
+							<string>Pager</string>
+							<key>it</key>
+							<string>Pager</string>
+							<key>ja</key>
+							<string>Pager</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/settingPager.js</string>
+						</array>
+						<key>Name</key>
+						<string>Pager</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Pause on hover</string>
+							<key>en</key>
+							<string>Pause on hover</string>
+							<key>fr</key>
+							<string>Pause on hover</string>
+							<key>it</key>
+							<string>Pause on hover</string>
+							<key>ja</key>
+							<string>Pause on hover</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/settingPause.js</string>
+						</array>
+						<key>Name</key>
+						<string>Pause on hover</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+					<dict>
+						<key>DisplayName</key>
+						<dict>
+							<key>de</key>
+							<string>Random order</string>
+							<key>en</key>
+							<string>Random order</string>
+							<key>fr</key>
+							<string>Random order</string>
+							<key>it</key>
+							<string>Random order</string>
+							<key>ja</key>
+							<string>Random order</string>
+						</dict>
+						<key>Enabled</key>
+						<false/>
+						<key>Files</key>
+						<array>
+							<string>scripts/slideshow/settingRandom.js</string>
+						</array>
+						<key>Name</key>
+						<string>Random order</string>
+						<key>Type</key>
+						<string>Javascript</string>
+					</dict>
+				</array>
+				<key>GroupName</key>
+				<string>Slide show settings</string>
+				<key>GroupSelectionLimit</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>GroupDisplayName</key>
+				<dict>
+					<key>de</key>
 					<string>Sidebar position</string>
 					<key>en</key>
 					<string>Sidebar position</string>
@@ -1775,6 +1947,6 @@
 	<key>RWThemeShortName</key>
 	<string>ss3</string>
 	<key>RWVersion</key>
-	<integer>7</integer>
+	<string>3.2.0</string>
 </dict>
 </plist>
