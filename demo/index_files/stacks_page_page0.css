@@ -1,0 +1,26 @@
+
+
+#stacks_in_10_page0 .stacks_left {
+	float:left;
+	width:49%;
+}
+
+#stacks_in_10_page0 .stacks_right {
+	float:right;
+	width:49%;
+}
+#stacks_in_20_page0 .stacks_left {
+	float:left;
+	width:32%;
+}
+
+#stacks_in_20_page0 .stacks_right {
+	float:right;
+	width:32%;
+}
+
+#stacks_in_20_page0 .stacks_middle {
+	position:relative;
+	margin:0 auto;
+	width:32%;
+}
