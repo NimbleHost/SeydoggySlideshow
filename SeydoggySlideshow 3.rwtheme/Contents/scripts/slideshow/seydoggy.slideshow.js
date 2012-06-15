@@ -8,7 +8,7 @@ if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = functio
 // initiate sdSS object
 sdSS = {};
 
-/* SeydoggySlideshow 3.2.0 */
+/* SeydoggySlideshow 3.2.1 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
@@ -183,7 +183,7 @@ sdSS = {};
             // PAGINATION
 
 			// if pagination is active, dynamically set pagination values
-			if (sdSlidePager.html()) {
+			if (sdSlidePager != '' && sdSlidePager.html()) {
 				sdSlidePager.find('a').html('&middot;');
 				sdSlidePager.css('margin-left',(sdSlidePager.width()/2)*(-1));
 			}
