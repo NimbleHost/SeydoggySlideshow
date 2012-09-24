@@ -6,9 +6,9 @@ if (typeof rwAddLinks == 'undefined') (function($) { $.fn.rwAddLinks = function(
 if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = function(elem, value) { sdTallest = 0; $(elem).each(function() { var thisTallest = $(this).outerHeight(true); if (thisTallest > sdTallest) sdTallest = thisTallest; }); $(this).height(sdTallest + value); }; })(jQuery); /* @end */
 
 // initiate sdSS object
-sdSS = {};
+if (!window.sdSS) sdSS = {};
 
-/* SeydoggySlideshow 3.2.1 */
+/* SeydoggySlideshow 3.2.2 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
