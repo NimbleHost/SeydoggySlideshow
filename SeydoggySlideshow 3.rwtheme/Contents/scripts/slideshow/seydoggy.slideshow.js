@@ -1,14 +1,14 @@
 /* RwGet */
-if (typeof RwGet == 'undefined') RwGet = { pathto: function(path, file) { var rtrim = function(str, list) { var charlist = !list ? 's\xA0': (list + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '$1'); var re = new RegExp('[' + charlist + ']+$', 'g'); return (str + '').replace(re, ''); }; var jspathto = rtrim(RwSet.pathto, "javascript.js"); if ((path !== undefined) && (file !== undefined)) { jspathto = jspathto + path + file; } else if (path !== undefined) { jspathto = jspathto + path; } return jspathto; }, baseurl: function(path, file) { var jsbaseurl = RwSet.baseurl; if ((path !== undefined) && (file !== undefined)) { jsbaseurl = jsbaseurl + path + file; } else if (path !== undefined) { jsbaseurl = jsbaseurl + path; } return jsbaseurl; } };
+if (typeof RwGet == 'undefined') RwGet = { pathto: function(path, file) { var rtrim = function(str, list) { var charlist = !list ? 's\xA0': (list + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '$1'); var re = new RegExp('[' + charlist + ']+$', 'g'); return (str + '').replace(re, ''); }; var jspathto = rtrim(RwSet.pathto, "javascript.js"); if ((path !== undefined) && (file !== undefined)) { jspathto = jspathto + path + file; } else if (path !== undefined) { jspathto = jspathto + path; } return jspathto; }, baseurl: function(path, file) { var jsbaseurl = RwSet.baseurl; if ((path !== undefined) && (file !== undefined)) { jsbaseurl = jsbaseurl + path + file; } else if (path !== undefined) { jsbaseurl = jsbaseurl + path; } return jsbaseurl; } };/* @end */
 /* rwAddLinks v1.0.0 */
-if (typeof rwAddLinks == 'undefined') (function($) { $.fn.rwAddLinks = function(linkArr) { var i = 0; $(this).each(function(i) { $(this).click(function() { location.href = linkArr[i++]; }).hover(function() { $(this).css("cursor", "pointer"); }); }); }; })(jQuery);
+if (typeof rwAddLinks == 'undefined') (function($) { $.fn.rwAddLinks = function(linkArr) { var i = 0; $(this).each(function(i) { $(this).click(function() { location.href = linkArr[i++]; }).hover(function() { $(this).css("cursor", "pointer"); }); }); }; })(jQuery); /* @end */
 /* sdSetHeight 1.1.0 */
-if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = function(elem, value) { sdTallest = 0; $(elem).each(function() { var thisTallest = $(this).outerHeight(true); if (thisTallest > sdTallest) sdTallest = thisTallest; }); $(this).height(sdTallest + value); }; })(jQuery);
+if (typeof sdSetHeight == 'undefined') (function($) { $.fn.sdSetHeight = function(elem, value) { sdTallest = 0; $(elem).each(function() { var thisTallest = $(this).outerHeight(true); if (thisTallest > sdTallest) sdTallest = thisTallest; }); $(this).height(sdTallest + value); }; })(jQuery); /* @end */
 
 // initiate sdSS object
-if (!window.sdSS) sdSS = {};
+sdSS = {};
 
-/* SeydoggySlideshow 3.2.3 */
+/* SeydoggySlideshow 3.2.1 */
 (function($) {
     $.SeydoggySlideshow = function(settings) {
 
@@ -28,27 +28,27 @@ if (!window.sdSS) sdSS = {};
 
         // VARIABLES
         var jq = $([]),
-			arrlen = '',
-			i = 0,
-			isVariable = typeof sdSS.headerHeightVariable === true,
-			hContainer = jq.add('div' + sdSS.wrapper),
-			sdSlideshow = hContainer.find('div' + sdSS.target),
-			pageHeader = sdSlideshow.find('div.pageHeader'),
+        	arrlen = '',
+        	i = 0,
+        	isVariable = typeof sdSS.headerHeightVariable != 'undefined',
+        	hContainer = jq.add('div' + sdSS.wrapper),
+        	sdSlideshow = hContainer.find('div' + sdSS.target),
+        	pageHeader = sdSlideshow.find('div.pageHeader'),
 			sdSlidePager = '',
-			slideHeader = sdSlideshow.add(pageHeader),
-			ec1 = hContainer.find('div#extraContainer' + sdSS.ecValue),
+        	slideHeader = sdSlideshow.add(pageHeader),
+        	ec1 = hContainer.find('div#extraContainer' + sdSS.ecValue),
 			preContent = ec1.parent('div.preContent'),
 			myEC = hContainer.find('div#myExtraContent' + sdSS.ecValue),
-			sdContentSlide = jq.add('div.sdSlideBoxStack'),
-			sdContentIndex = 0,
-			headerWidth = sdSlideshow.width(),
-			headerHeight = pageHeader.css('height'),
+        	sdContentSlide = jq.add('div.sdSlideBoxStack'),
+        	sdContentIndex = 0,
+        	headerWidth = sdSlideshow.width(),
+        	headerHeight = pageHeader.css('height'),
 			nextClass = '',
 			prevClass = '',
 			plusClass = 0;
 			
 		// set plusClass
-		sdSS.plusClass !== '' ? plusClass = ' ' + sdSS.plusClass : plusClass = '';
+		sdSS.plusClass != '' ? plusClass = ' ' + sdSS.plusClass : plusClass = ''; 
 
 		// if SlideBox Stacks is not found, use SlideBox Snippet
         if (!sdContentSlide.length) sdContentSlide = jq.add('div.sdSlideBoxSnippet'), sdContentIndex = 1;
@@ -79,7 +79,7 @@ if (!window.sdSS) sdSS = {};
 			// if SlideBox option is used
             if (typeof sdSS.slideBox != "undefined") {
 
-				// SETUP BOX SLIDES
+            	// SETUP BOX SLIDES
                 
 				// VARIABLES
                 sdSS.slideNum = [];
@@ -125,7 +125,7 @@ if (!window.sdSS) sdSS = {};
 
                 if (typeof sdSS.slideWH != "undefined") {
 					// WAREHOUSE
-					arrlen = sdSS.slideWH.length;
+	                arrlen = sdSS.slideWH.length;
                     for (i; i < arrlen; ++i) {
                         sdSlideshow.append('<div class="pageHeader' + plusClass + '" style="background: url(' + sdSS.slideWH[i] + ') ' + sdSS.bgPosition + ' ' + sdSS.bgRepeat + '; width:' + headerWidth + 'px;"/>');
                     }
@@ -141,7 +141,7 @@ if (!window.sdSS) sdSS = {};
             // SLIDESHOW SETTINGS
 
 			// if navigation is selected
-			if (sdSS.navigation === true) {
+			if (sdSS.navigation == true) {
 				
 				// create navigation elements
 				sdSlideshow.append('<div class="sdSlideNav"><a class="prev" href="#">&lsaquo;</a><a class="next" href="#">&rsaquo;</a></div>');
@@ -154,13 +154,13 @@ if (!window.sdSS) sdSS = {};
 					var navWidth = jq.add('div.sdSlideNav a.prev, div.sdSlideNav a.next').outerWidth(true);
 					ec1.width(ec1.width() - (navWidth * 2)).css('margin-left', navWidth);
 
-					// (again) if header height is variable set .seydoggySlideshow height to content height
-					if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
+	                // (again) if header height is variable set .seydoggySlideshow height to content height
+	                if (isVariable) slideHeader.sdSetHeight(ec1.find('div'), sdSS.heightAdjust);
 				}
 			}
 			
 			// if pager is selected set pager classes
-			if (sdSS.pager !== undefined) sdSlideshow.append('<div class="sdSlidePager"/>'), sdSlidePager = sdSlideshow.find('div.sdSlidePager');
+			if (sdSS.pager != undefined) sdSlideshow.append('<div class="sdSlidePager"/>'), sdSlidePager = sdSlideshow.find('div.sdSlidePager');
 			
 
             // START THE SLIDESHOW
@@ -169,9 +169,9 @@ if (!window.sdSS) sdSS = {};
                 fx: sdSS.effect,
 				next: nextClass,
 				pager: sdSS.pager,
-				pagerEvent: 'mouseover',
-				pause: sdSS.pause,
-				pauseOnPagerHover: true,
+				pagerEvent: 'mouseover', 
+			    pause: sdSS.pause,
+			    pauseOnPagerHover: true,
 				prev: prevClass,
 				random: sdSS.random,
 				randomizeEffects: true,
@@ -183,7 +183,7 @@ if (!window.sdSS) sdSS = {};
             // PAGINATION
 
 			// if pagination is active, dynamically set pagination values
-			if (sdSlidePager !== '' && sdSlidePager.html()) {
+			if (sdSlidePager != '' && sdSlidePager.html()) {
 				sdSlidePager.find('a').html('&middot;');
 				sdSlidePager.css('margin-left',(sdSlidePager.width()/2)*(-1));
 			}
@@ -193,5 +193,5 @@ if (!window.sdSS) sdSS = {};
 
         // add links to slides
         if (typeof sdSS.slideLinks != "undefined") sdSlideshow.find('div.pageHeader').rwAddLinks(sdSS.slideLinks);
-	};
+    }
 })(jQuery);

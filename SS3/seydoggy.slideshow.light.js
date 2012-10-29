@@ -27,7 +27,7 @@ if (!window.sdSS) sdSS = {};
         var jq = $([]),
 			arrlen = '',
 			i = 0,
-			isVariable = typeof sdSS.headerHeightVariable === true,
+			isVariable = typeof sdSS.headerHeightVariable != 'undefined',
 			hContainer = jq.add('div' + sdSS.wrapper),
 			sdSlideshow = hContainer.find('div' + sdSS.target),
 			pageHeader = sdSlideshow.find('div.pageHeader'),
