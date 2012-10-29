@@ -1,6 +1,6 @@
 # SeydoggySlideshow #
 **AUTHOR:	Adam Merrifield**   
-**VERSION: 3.2.2**   
+**VERSION: 3.2.3**   
 
 ## About SeydoggySlideshow ##
 
@@ -2053,6 +2053,10 @@ See the [sdSlideBox Snippet](http://seydesign.com/products/Snippets/sdSlideBox/ 
 ### SeyDoggy SlideBox (slide box stack) ###
 
 For details on how to use the [SlideBox stack](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products"), visit the SlideBox Stack [product page](http://seydesign.com/products/Stacks/Free/SlideBox/ "seyDesign - SlideBox &rarr; Free &rarr; Stacks &rarr; products").
+
+## What's New in 3.2.3 ##
+
+* a little light linting
 
 ## What's New in 3.2.2 ##
 
